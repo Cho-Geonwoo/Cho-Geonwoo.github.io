@@ -3,7 +3,7 @@ layout: post
 title: "[Jekyll Blog] 마크다운(Markdown) 사용법 및 예제"
 subtitle: "마크다운(Markdown)"
 categories: dev
-tags: markdown
+tags: frontend markdown
 comments: true
 ---
 
