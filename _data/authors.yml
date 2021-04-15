@@ -1,28 +1,28 @@
 # The primary author of this blog.
 # Must be the same as `author` in `_config.yml`.
 # Change `qwtel` to your shortname (used in the front matter to set a page's author, e.g. `author: qwtel`).
-theorydb:
-  name:              min
-  email:             theorydb@gmail.com
+Cho-Geonwoo:
+  name: gary
+  email: Cho-Geonwoo@gmail.com
 
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
-  about:             |
-    Data science enthusiast and addict :)
+  about: |
+    AI, 블록체인 기술에 관심이 많은 새내기 개발자 :)
 
   # This photo will be used in the about section
   picture:
-    src:             /assets/img/me.jpg
+    src: /assets/img/me.jpeg
     # srcset is optional, but can be used to provide higher res versions for retina displays
     srcset:
-      1x:            /assets/img/me.jpg
-      2x:            /assets/img/me.jpg
+      1x: /assets/img/me.jpeg
+      2x: /assets/img/me.jpeg
 
   # Social media icons in sidebar
   # Comment/uncommet to show/hide
   # Icons appear in order, can be rearranged:
   social:
-    facebook:        cantouchmin
+    facebook: GeonwooCho
     # twitter:         <username>
     # google:          <number>
     # vk:              <username>
@@ -46,7 +46,7 @@ theorydb:
     # pinterest:       <username>
     # foursquare:      <number>
     # yelp:            <string>
-    github:          theorydb
+    github: Cho-Geonwoo
     # stackoverflow:   <number/username>
     # npm:             <username>
     # hackernews:      <username>
@@ -57,22 +57,20 @@ theorydb:
     # delicious:       <username>
     # stumbleupon:     <username>
     # paypal:          <username>
-    email:           mailto:theorydb@gmail.com
-    rss:             https://theorydb.github.io/feed.xml
-
+    email: mailto:Cho-Geonwoo@gmail.com
 # Another author
 mdo:
-  name:              <firtname> <lastname>
-  email:             <mail@domain.tld>
-  about:             |
+  name: <firtname> <lastname>
+  email: <mail@domain.tld>
+  about: |
     Lorem ipsum dolor sit amet, consectetur adipiscing elit,
     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
     Open `_data/authors.yml` to edit this text.
-  picture:           https://placehold.it/128x128
+  picture: https://placehold.it/128x128
   social:
-    github:          <username>
-    twitter:         <username>
-  image: 'data:image/gif;base64,R0lGODlhAQABAPAAACAgIP///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==' # http://jsfiddle.net/LPxrT/
-  color: '#268bd2'
+    github: <username>
+    twitter: <username>
+  image: "data:image/gif;base64,R0lGODlhAQABAPAAACAgIP///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" # http://jsfiddle.net/LPxrT/
+  color: "#268bd2"

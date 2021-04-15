@@ -1,10 +1,10 @@
 ---
 layout: list
-title: Favorites
+title: favorites
 slug: favorites
 menu: true
-submenu: false
-order: 7
+submenu: true
+order: 2
 description: >
-  개발, 일상 등 유용한 즐겨찾기 모음.
+  독서, 운동 등 취미에 관련된 모든 것.
 ---
