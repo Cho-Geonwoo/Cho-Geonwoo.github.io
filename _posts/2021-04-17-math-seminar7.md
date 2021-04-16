@@ -270,7 +270,4 @@ ICA는 ICA를 통해 얻은 기저벡터들에 데이터를 정사영했을 때 
 3. Independent Component Analysis 2: Estimation by maximization of non-Gaussianity / Aapo Hyvarinen
 4. Independent Component Analysis 3: Maximum Likelihood Estimation / Aapo Hyvarinen
 
-<center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/HcMFFWcrE_U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</center>
 {% endraw %}

@@ -394,6 +394,3 @@ end
 - [Introduction to deconICA](https://urszulaczerwinska.github.io/DeconICA/DeconICA_introduction.html)
 - [Kaggle: NMF and Image Compression](https://www.kaggle.com/elenageminiani/nmf-and-image-compression)
 - [Algorithms for Non-negative Matrix Factorization](https://papers.nips.cc/paper/1861-algorithms-for-non-negative-matrix-factorization.pdf)
-
-<center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/wib-14u0mA4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>

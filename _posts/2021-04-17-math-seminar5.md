@@ -410,5 +410,3 @@ $$
 여기서 보면 세 번째 eigenvalue부터 갑자기 꺾이는 현상이 보인다.
 
 그러면 이때는 3차원까지 차원 감소를 시켜준다는 식으로 결정하는 것이 scree plot을 이용한 방법이다. scree plot은 PCA외에도 많은 method에서 사용된다.
-
-<center><iframe width="560" height="315" src="https://www.youtube.com/embed/YEdscCNsinU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>

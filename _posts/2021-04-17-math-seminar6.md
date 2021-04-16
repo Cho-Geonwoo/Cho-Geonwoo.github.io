@@ -309,5 +309,3 @@ $$= \sigma_1 \vec u_1 \vec v_1^T + \sigma_2 \vec u_2 \vec v_2^T +\cdots+ \sigma_
 <p align = "center">
   <iframe width = "520" height = "540" src="https://angeloyeo.github.io/p5/2019-08-01-SVD_picture_applet/" frameborder = "0"></iframe>
 </p>
-
-<center><iframe width="560" height="315" src="https://www.youtube.com/embed/cq5qlYtnLoY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>

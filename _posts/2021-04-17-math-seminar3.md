@@ -211,10 +211,5 @@ $$
 
 그러므로 기하학적으로 이것을 다시 설명하면, $\vec{x} = [1,1]$ 벡터는 선형변환 $A$ 를 취해주면 그 방향은 변하지 않고, 크기가 3배가 된다. 또, $\vec{x} = [1, -1]$ 벡터는 선형변환 $A$ 를 취해주게 되면 그 방향은 변하지 않고 크기는 1배가 된다는 의미이다.
 
-<center>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/7dmV3p3Iy90" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  
-</center>
-
 [^1]: 일반적으로는 벡터공간에 대한 선형 변환 연산이라고 할 수 있다.
 [^2]: 여기서 크기는 음수를 포함한다.

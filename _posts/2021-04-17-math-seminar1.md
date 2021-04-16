@@ -153,8 +153,4 @@ $$\Rightarrow c_1\begin{bmatrix}1\\0 \end{bmatrix}+c_2\begin{bmatrix}0\\1 \end{b
 
 이러한 벡터 간의 선형 결합이 어떤 벡터공간 전체에 대응된다는 개념을 공간 생성(span)이라고 하며, 이는 행렬 곱과 연립방정식의 해를 얻는 과정에 대한 새로운 관점을 제시해줄 아주 중요한 단서가 된다.
 
-<center>
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/R-XHrNq9Ff4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</center>
-
 [^1]: 어떤 책에서는 스칼라의 개념까지 포함해 $(V, S, +, \cdot)$으로 쓰기도 한다. 여기서 $S$는 스칼라.

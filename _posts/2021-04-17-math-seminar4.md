@@ -255,7 +255,3 @@ $Q^T$, $\Lambda$, $Q$의 선형 변환을 차례대로 적용하면 원래의 �
 아래의 Applet에서 세 개의 슬라이드는 각각 $Q$, $\Lambda$, $Q^T$에 해당한다.
 
 <p align="center"><iframe  src="https://angeloyeo.github.io/p5/2020-11-19-eigen_decomposition/linear_transformation_sym_A_decomposed/" width="320" height = "265" frameborder="0"></iframe><br> 애니메이션 7. 선형변환 $Q$, $\Lambda$, $Q^T$을 독립적으로 적용 시켜보자.</p>
-
-<center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VUHihs_ClFA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</center>
