@@ -7,12 +7,6 @@ tags: math linear-algebra
 comments: false
 ---
 
-# Prerequisites
-
-이번 포스팅을 이해하기 위해선 아래의 내용에 대해 잘 알고 오시는 것을 추천드립니다.
-
-독립성분분석은 내용이 어려운 편이기 때문에 꼭 다 이해하실 필요는 없습니다만, 주성분분석과 경사하강법은 알고오시는 것을 추천드립니다.
-
 # NMF의 정의
 
 음수 미포함 행렬 분해(Non-negative Matrix Factorization, NMF)는 음수를 포함하지 않는 행렬 $X$를 음수를 포함하지 않는 행렬 $W$와 $H$의 곱으로 분해하는 알고리즘이다
