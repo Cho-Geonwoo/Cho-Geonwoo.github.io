@@ -11,11 +11,6 @@ comments: false
 
 이번 포스팅을 이해하기 위해선 아래의 내용에 대해 잘 알고 오시는 것을 추천드립니다.
 
-- [주성분분석(PCA)](https://angeloyeo.github.io/2019/07/27/PCA.html)
-- [특이값분해(SVD)](https://angeloyeo.github.io/2019/08/01/SVD.html)
-- [독립성분분석(ICA)](https://angeloyeo.github.io/2020/07/14/ICA.html)
-- [경사하강법(gradient descent)](https://angeloyeo.github.io/2020/08/16/gradient_descent.html)
-
 독립성분분석은 내용이 어려운 편이기 때문에 꼭 다 이해하실 필요는 없습니다만, 주성분분석과 경사하강법은 알고오시는 것을 추천드립니다.
 
 # NMF의 정의
@@ -74,11 +69,11 @@ NMF가 유용한 이유 중 하나는 추출하게 되는 feature들이 모두 n
 
 또, NMF를 사용하면 좋은 이유 중 하나는 NMF는 PCA나 SVD와 같은 factorization 방법에 비해서 데이터 구조를 조금 더 잘 반영할 수 있기 때문이다.
 
-[PCA](https://angeloyeo.github.io/2019/07/27/PCA.html)나 [SVD](https://angeloyeo.github.io/2019/08/01/SVD.html)는 feature들 간의 직교성이 보장된다. 알고리즘 자체가 그렇게 설계된 것이기 때문이다.
+[PCA](https://cho-geonwoo.github.io/dev/2021/04/17/math-seminar5/)나 [SVD](https://cho-geonwoo.github.io/dev/2021/04/17/math-seminar6/)는 feature들 간의 직교성이 보장된다. 알고리즘 자체가 그렇게 설계된 것이기 때문이다.
 
 PCA만 가지고 설명하면 PCA는 covariance matrix의 eigenvector를 이용한 분해인데, covariance matrix는 symmetric matrix이므로 eigenvector들은 항상 직교한다는 것을 수학적으로 증명할 수 있다.
 
-(좀 더 자세한 설명에 대해선 [PCA](https://angeloyeo.github.io/2019/07/27/PCA.html)와 [SVD](https://angeloyeo.github.io/2019/08/01/SVD.html) 편을 참고해서 확인하길 바란다.)
+(좀 더 자세한 설명에 대해선 [PCA](https://cho-geonwoo.github.io/dev/2021/04/17/math-seminar5/)와 [SVD](https://cho-geonwoo.github.io/dev/2021/04/17/math-seminar6/) 편을 참고해서 확인하길 바란다.)
 
 하지만 feature 벡터들이 서로 직교하게 되면 데이터셋의 실제 데이터 구조를 잘 반영하지 못하게 될 수도 있다. 아래의 그림을 통해 PCA와 NMF의 차이를 확인해보도록 하자.
 

@@ -27,15 +27,6 @@ comments: false
 
 말이 어려워 보이지만, 아래의 예시를 보면서 ICA가 할 수 있는 일이 어떤 것인지 알아보도록 하자.
 
-<p align = "center">
-  <img src = "http://pathpartner.wpengine.com/wp-content/uploads/2016/03/BSS-block-diagram.png">
-  <br>
-  그림 1. ICA가 할 수 있는 일을 block diagram으로 나타낸 것. 
-  <br> 섞여버린 두 개의 음원을 분리해내는 과정을 보여주고 있다.
-  <br> (Blind Source Separation라고 적힌 것이 ICA가 하는 일)
-  <br> 출처: https://www.pathpartnertech.com/blind-source-separation-for-cocktail-party-problem
-</p>
-
 방에서 두 사람이 동시에 말을 하고 있다고 생각해보자. 그리고 두 개의 마이크로 녹음을 진행하고 있다고 생각해보자.
 
 두 개의 마이크로 녹음된 신호를 각각 $x_1(t), x_2(t)$라고 하고, 두 사람의 음성 신호를 각각 $s_1(t), s_2(t)$라고 하면,
@@ -254,7 +245,7 @@ $$
 
 # PCA와 ICA의 차이
 
-※ PCA에 대해 잘 모르는 경우 --> [여기 클릭](https://angeloyeo.github.io/2019/07/27/PCA.html)
+※ PCA에 대해 잘 모르는 경우 --> [여기 클릭](https://cho-geonwoo.github.io/dev/2021/04/17/math-seminar5/)
 
 PCA와 ICA 모두 공통적으로 주어진 데이터를 대표하는 기저벡터를 찾아준다는 점에서는 같은 역할을 한다고 할 수 있다.
 

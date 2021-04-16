@@ -15,8 +15,8 @@ comments: false
 
 해당 post를 잘 이해하기 위해선 아래의 내용에 대해 알고 오시는 것이 좋습니다.
 
-- [행렬과 선형변환](https://angeloyeo.github.io/2019/07/15/Matrix_as_Linear_Transformation.html)
-- [고윳값과 고유벡터](https://angeloyeo.github.io/2019/07/17/eigen_vector.html)
+- [행렬과 선형변환](https://cho-geonwoo.github.io/dev/2021/04/17/math-seminar2/)
+- [고윳값과 고유벡터](https://cho-geonwoo.github.io/dev/2021/04/17/math-seminar3/)
 
 # 배경 지식
 

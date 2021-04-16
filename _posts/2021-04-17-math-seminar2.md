@@ -43,8 +43,6 @@ $$\begin{bmatrix}1 & 2\end{bmatrix}\begin{bmatrix}a\\c\end{bmatrix} = 1\cdot a +
 
 즉, 일반적으로 이용하는 행렬곱의 관점은 행벡터와 열벡터 간의 내적(inner product)을 계산함으로써 행렬곱이 이루어진다는 것을 알 수 있다.
 
-여기서 행벡터와 행벡터, 혹은 열벡터와 열벡터가 아닌, "행벡터와 열벡터 간의 연산"이 이루어진다는 점이 중요한데, 이 점에 대해서는 다음 포스트인 [행벡터의 의미와 벡터의 내적 편](https://angeloyeo.github.io/2020/09/09/row_vector_and_inner_product.html)을 참고하기를 추천한다.
-
 참고로 이러한 관점을 응용한 개념으로는 [공분산 행렬](https://angeloyeo.github.io/2019/07/27/PCA.html#%EA%B3%B5%EB%B6%84%EC%82%B0-%ED%96%89%EB%A0%AC%EC%9D%98-%EC%9D%98%EB%AF%B8)이 있으며, 공분산 행렬의 의미는 여러 종류의 feature들이 서로 얼마나 닮았는가(즉, 내적을 이용)를 의미한다.
 
 ## 행렬은 선형 변환이다.

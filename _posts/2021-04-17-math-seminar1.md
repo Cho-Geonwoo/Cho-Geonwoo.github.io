@@ -127,7 +127,7 @@ $$e = \begin{bmatrix}83\\50\\25\\30\\60\end{bmatrix}$$
 
 $$avg = \frac{1}{2}k + \frac{1}{2}e = \frac{1}{2}\begin{bmatrix}100\\70\\30\\45\\80\end{bmatrix}+\frac{1}{2}\begin{bmatrix}83\\50\\25\\30\\60\end{bmatrix}$$
 
-지금은 단순한 평균에 대한 예시를 작성하였지만 추후에 배울 여러가지 데이터 처리 기법들([PCA](https://angeloyeo.github.io/2019/07/27/PCA.html), [SVD](https://angeloyeo.github.io/2019/08/01/SVD.html), [선형 회귀](https://angeloyeo.github.io/2020/08/24/linear_regression.html), [독립성분분석](https://angeloyeo.github.io/2020/07/14/ICA.html) ...)등의 수많은 기법들이 위와 같이 데이터를 벡터로 생각하여 데이터가 처리된다는 점을 강조하고 싶다.
+지금은 단순한 평균에 대한 예시를 작성하였지만 추후에 배울 여러가지 데이터 처리 기법들([PCA](https://cho-geonwoo.github.io/dev/2021/04/17/math-seminar5/), [SVD](https://cho-geonwoo.github.io/dev/2021/04/17/math-seminar6/), [독립성분분석](https://cho-geonwoo.github.io/dev/2021/04/17/math-seminar7/) ...)등의 수많은 기법들이 위와 같이 데이터를 벡터로 생각하여 데이터가 처리된다는 점을 강조하고 싶다.
 
 ## 벡터 간의 선형 결합
 
