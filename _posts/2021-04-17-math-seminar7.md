@@ -21,6 +21,10 @@ comments: false
   - 추천 JS Applet: [Seeing Theory](https://seeing-theory.brown.edu/bayesian-inference/index.html#section2)
 - Gradient Descent(혹은 Gradient Ascent)
 
+<p align = "center">
+  <img src = "https://raw.githubusercontent.com/angeloyeo/angeloyeo.github.io/master/pics/2020-07-17-MLE/pic1.png">
+</p>
+
 # ICA 모델과 목적
 
 위키피디아에 따르면 독립 성분 분석(Independent Component Analysis, ICA)은 다변량의 신호를 통계적으로 독립적인 하부 성분으로 분리하는 계산 방법이라고 되어 있다.
