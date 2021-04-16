@@ -1,15 +1,18 @@
 {% if site.google_analytics %}
 <script>
-  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-  ga('create', '{{ site.google_analytics }}', 'auto');
-  ga('send', 'pageview');
-  loadJSDeferred('https://www.google-analytics.com/analytics.js');
+  window.ga =
+    window.ga ||
+    function () {
+      (ga.q = ga.q || []).push(arguments);
+    };
+  ga.l = +new Date();
+  ga("create", "{{ site.google_analytics }}", "auto");
+  ga("send", "pageview");
+  loadJSDeferred("https://www.google-analytics.com/analytics.js");
 </script>
-{% endif %}
-
-{% assign google_fonts = site.google_fonts | default:"Roboto+Slab:700|Noto+Serif:400,400i,700,700i" %}
-
-{% capture icons_url %}{% link assets/icomoon/style.css %}{% endcapture %}
+{% endif %} {% assign google_fonts = site.google_fonts |
+default:"Roboto+Slab:700|Noto+Serif:400,400i,700,700i" %} {% capture icons_url
+%}{% link assets/icomoon/style.css %}{% endcapture %}
 <!--[if gt IE 8]><!---->
 <script src="//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 <script>
@@ -29,12 +32,31 @@
 <!--<![endif]-->
 
 {% unless page.redirect %}
-  <!--[if gt IE 9]><!---->
-  {% capture js_url %}{% link assets/js/hydejack.js %}?v=6.4.0{% endcapture %}
-  <script>loadJSDeferred('{{ js_url | relative_url }}');</script>
+<!--[if gt IE 9]><!---->
+{% capture js_url %}{% link assets/js/hydejack.js %}?v=6.4.0{% endcapture %}
+<script>
+  loadJSDeferred("{{ js_url | relative_url }}");
+</script>
 
-  {% comment %}
-    {% include my-scripts.html %}
-  {% endcomment %}
-  <!--<![endif]-->
+{% comment %} {% include my-scripts.html %} {% endcomment %}
+<!--<![endif]-->
 {% endunless %}
+
+<script
+  type="text/javascript"
+  async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"
+></script>
+
+<script type="text/x-mathjax-config">
+  	MathJax.Hub.Config({
+  	extensions: ["tex2jax.js"],
+  	jax: ["input/TeX", "output/HTML-CSS"],
+  	tex2jax: {
+  		inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+  		displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+  		processEscapes: true
+  	},
+  	"HTML-CSS": { availableFonts: ["TeX"] }
+  });
+</script>
