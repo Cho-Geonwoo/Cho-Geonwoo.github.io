@@ -10,11 +10,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "book",
-          "read",
-          "reading"
-        ],
+        "tags": ["book", "read", "reading"],
         "defaultCode": 59679,
         "grid": 16
       },
@@ -41,11 +37,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "library",
-          "bank",
-          "building"
-        ],
+        "tags": ["library", "bank", "building"],
         "defaultCode": 59681,
         "grid": 16
       },
@@ -70,13 +62,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "phone",
-          "telephone",
-          "contact",
-          "support",
-          "call"
-        ],
+        "tags": ["phone", "telephone", "contact", "support", "call"],
         "defaultCode": 59714,
         "grid": 16
       },
@@ -101,13 +87,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "envelop",
-          "mail",
-          "email",
-          "contact",
-          "letter"
-        ],
+        "tags": ["envelop", "mail", "email", "contact", "letter"],
         "defaultCode": 59717,
         "grid": 16
       },
@@ -132,11 +112,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "location",
-          "map-marker",
-          "pin"
-        ],
+        "tags": ["location", "map-marker", "pin"],
         "defaultCode": 59719,
         "grid": 16
       },
@@ -162,12 +138,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "bubbles",
-          "comments",
-          "chat",
-          "talk"
-        ],
+        "tags": ["bubbles", "comments", "chat", "talk"],
         "defaultCode": 59756,
         "grid": 16
       },
@@ -192,10 +163,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "quotes-right",
-          "rdquo"
-        ],
+        "tags": ["quotes-right", "rdquo"],
         "defaultCode": 59768,
         "grid": 16
       },
@@ -253,14 +221,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "trophy",
-          "cup",
-          "prize",
-          "award",
-          "winner",
-          "tournament"
-        ],
+        "tags": ["trophy", "cup", "prize", "award", "winner", "tournament"],
         "defaultCode": 59806,
         "grid": 16
       },
@@ -351,13 +312,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "link",
-          "chain",
-          "url",
-          "uri",
-          "anchor"
-        ],
+        "tags": ["link", "chain", "url", "uri", "anchor"],
         "defaultCode": 59851,
         "grid": 16
       },
@@ -382,13 +337,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "star-empty",
-          "rate",
-          "star",
-          "favorite",
-          "bookmark"
-        ],
+        "tags": ["star-empty", "rate", "star", "favorite", "bookmark"],
         "defaultCode": 59863,
         "grid": 16
       },
@@ -413,11 +362,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "star-half",
-          "rate",
-          "star"
-        ],
+        "tags": ["star-half", "rate", "star"],
         "defaultCode": 59864,
         "grid": 16
       },
@@ -442,13 +387,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "star-full",
-          "rate",
-          "star",
-          "favorite",
-          "bookmark"
-        ],
+        "tags": ["star-full", "rate", "star", "favorite", "bookmark"],
         "defaultCode": 59865,
         "grid": 16
       },
@@ -473,12 +412,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "heart",
-          "like",
-          "love",
-          "favorite"
-        ],
+        "tags": ["heart", "like", "love", "favorite"],
         "defaultCode": 59866,
         "grid": 16
       },
@@ -539,10 +473,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "amazon",
-          "brand"
-        ],
+        "tags": ["amazon", "brand"],
         "defaultCode": 60039,
         "grid": 16
       },
@@ -567,10 +498,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "google",
-          "brand"
-        ],
+        "tags": ["google", "brand"],
         "defaultCode": 60040,
         "grid": 16
       },
@@ -596,11 +524,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "google-plus",
-          "brand",
-          "social"
-        ],
+        "tags": ["google-plus", "brand", "social"],
         "defaultCode": 60043,
         "grid": 16
       },
@@ -627,10 +551,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "google-drive",
-          "brand"
-        ],
+        "tags": ["google-drive", "brand"],
         "defaultCode": 60047,
         "grid": 16
       },
@@ -655,11 +576,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "facebook",
-          "brand",
-          "social"
-        ],
+        "tags": ["facebook", "brand", "social"],
         "defaultCode": 60048,
         "grid": 16
       },
@@ -686,11 +603,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "instagram",
-          "brand",
-          "social"
-        ],
+        "tags": ["instagram", "brand", "social"],
         "defaultCode": 60050,
         "grid": 16
       },
@@ -715,11 +628,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "whatsapp",
-          "brand",
-          "social"
-        ],
+        "tags": ["whatsapp", "brand", "social"],
         "defaultCode": 60051,
         "grid": 16
       },
@@ -744,11 +653,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "spotify",
-          "brand",
-          "social"
-        ],
+        "tags": ["spotify", "brand", "social"],
         "defaultCode": 60052,
         "grid": 16
       },
@@ -773,11 +678,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "telegram",
-          "brand",
-          "social"
-        ],
+        "tags": ["telegram", "brand", "social"],
         "defaultCode": 60053,
         "grid": 16
       },
@@ -802,12 +703,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "twitter",
-          "brand",
-          "tweet",
-          "social"
-        ],
+        "tags": ["twitter", "brand", "tweet", "social"],
         "defaultCode": 60054,
         "grid": 16
       },
@@ -832,11 +728,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "vine",
-          "brand",
-          "social"
-        ],
+        "tags": ["vine", "brand", "social"],
         "defaultCode": 60055,
         "grid": 16
       },
@@ -861,11 +753,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "vk",
-          "brand",
-          "social"
-        ],
+        "tags": ["vk", "brand", "social"],
         "defaultCode": 60056,
         "grid": 16
       },
@@ -892,11 +780,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "renren",
-          "brand",
-          "social"
-        ],
+        "tags": ["renren", "brand", "social"],
         "defaultCode": 60057,
         "grid": 16
       },
@@ -924,11 +808,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "sina-weibo",
-          "brand",
-          "social"
-        ],
+        "tags": ["sina-weibo", "brand", "social"],
         "defaultCode": 60058,
         "grid": 16
       },
@@ -953,11 +833,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "feed",
-          "rss",
-          "social"
-        ],
+        "tags": ["feed", "rss", "social"],
         "defaultCode": 60059,
         "grid": 16
       },
@@ -982,11 +858,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "youtube",
-          "brand",
-          "social"
-        ],
+        "tags": ["youtube", "brand", "social"],
         "defaultCode": 60061,
         "grid": 16
       },
@@ -1013,11 +885,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "twitch",
-          "brand",
-          "social"
-        ],
+        "tags": ["twitch", "brand", "social"],
         "defaultCode": 60063,
         "grid": 16
       },
@@ -1042,11 +910,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "vimeo",
-          "brand",
-          "social"
-        ],
+        "tags": ["vimeo", "brand", "social"],
         "defaultCode": 60064,
         "grid": 16
       },
@@ -1071,10 +935,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "lanyrd",
-          "brand"
-        ],
+        "tags": ["lanyrd", "brand"],
         "defaultCode": 60066,
         "grid": 16
       },
@@ -1099,11 +960,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "flickr",
-          "brand",
-          "social"
-        ],
+        "tags": ["flickr", "brand", "social"],
         "defaultCode": 60068,
         "grid": 16
       },
@@ -1128,11 +985,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "dribbble",
-          "brand",
-          "social"
-        ],
+        "tags": ["dribbble", "brand", "social"],
         "defaultCode": 60071,
         "grid": 16
       },
@@ -1159,11 +1012,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "behance",
-          "brand",
-          "social"
-        ],
+        "tags": ["behance", "brand", "social"],
         "defaultCode": 60072,
         "grid": 16
       },
@@ -1188,11 +1037,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "deviantart",
-          "brand",
-          "social"
-        ],
+        "tags": ["deviantart", "brand", "social"],
         "defaultCode": 60074,
         "grid": 16
       },
@@ -1217,11 +1062,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "500px",
-          "brand",
-          "social"
-        ],
+        "tags": ["500px", "brand", "social"],
         "defaultCode": 60075,
         "grid": 16
       },
@@ -1246,11 +1087,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "steam",
-          "brand",
-          "social"
-        ],
+        "tags": ["steam", "brand", "social"],
         "defaultCode": 60076,
         "grid": 16
       },
@@ -1279,10 +1116,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "dropbox",
-          "brand"
-        ],
+        "tags": ["dropbox", "brand"],
         "defaultCode": 60078,
         "grid": 16
       },
@@ -1307,11 +1141,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "onedrive",
-          "brand",
-          "skydrive"
-        ],
+        "tags": ["onedrive", "brand", "skydrive"],
         "defaultCode": 60079,
         "grid": 16
       },
@@ -1336,12 +1166,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "github",
-          "brand",
-          "octacat",
-          "social"
-        ],
+        "tags": ["github", "brand", "octacat", "social"],
         "defaultCode": 60080,
         "grid": 16
       },
@@ -1366,10 +1191,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "npm",
-          "brand"
-        ],
+        "tags": ["npm", "brand"],
         "defaultCode": 60081,
         "grid": 16
       },
@@ -1394,10 +1216,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "basecamp",
-          "brand"
-        ],
+        "tags": ["basecamp", "brand"],
         "defaultCode": 60082,
         "grid": 16
       },
@@ -1422,10 +1241,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "trello",
-          "brand"
-        ],
+        "tags": ["trello", "brand"],
         "defaultCode": 60083,
         "grid": 16
       },
@@ -1450,12 +1266,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "wordpress",
-          "brand",
-          "social",
-          "cms"
-        ],
+        "tags": ["wordpress", "brand", "social", "cms"],
         "defaultCode": 60084,
         "grid": 16
       },
@@ -1480,11 +1291,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "joomla",
-          "brand",
-          "cms"
-        ],
+        "tags": ["joomla", "brand", "cms"],
         "defaultCode": 60085,
         "grid": 16
       },
@@ -1509,11 +1316,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "ello",
-          "brand",
-          "social"
-        ],
+        "tags": ["ello", "brand", "social"],
         "defaultCode": 60086,
         "grid": 16
       },
@@ -1538,11 +1341,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "blogger",
-          "brand",
-          "social"
-        ],
+        "tags": ["blogger", "brand", "social"],
         "defaultCode": 60087,
         "grid": 16
       },
@@ -1567,11 +1366,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "tumblr",
-          "brand",
-          "social"
-        ],
+        "tags": ["tumblr", "brand", "social"],
         "defaultCode": 60089,
         "grid": 16
       },
@@ -1596,11 +1391,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "yahoo",
-          "brand",
-          "social"
-        ],
+        "tags": ["yahoo", "brand", "social"],
         "defaultCode": 60091,
         "grid": 16
       },
@@ -1625,11 +1416,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "soundcloud",
-          "brand",
-          "social"
-        ],
+        "tags": ["soundcloud", "brand", "social"],
         "defaultCode": 60099,
         "grid": 16
       },
@@ -1658,11 +1445,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "skype",
-          "brand",
-          "social"
-        ],
+        "tags": ["skype", "brand", "social"],
         "defaultCode": 60101,
         "grid": 16
       },
@@ -1687,11 +1470,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "reddit",
-          "brand",
-          "social"
-        ],
+        "tags": ["reddit", "brand", "social"],
         "defaultCode": 60102,
         "grid": 16
       },
@@ -1716,13 +1495,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "hackernews",
-          "brand",
-          "ycombinator",
-          "yc",
-          "social"
-        ],
+        "tags": ["hackernews", "brand", "ycombinator", "yc", "social"],
         "defaultCode": 60103,
         "grid": 16
       },
@@ -1747,10 +1520,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "wikipedia",
-          "brand"
-        ],
+        "tags": ["wikipedia", "brand"],
         "defaultCode": 60104,
         "grid": 16
       },
@@ -1777,11 +1547,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "linkedin",
-          "brand",
-          "social"
-        ],
+        "tags": ["linkedin", "brand", "social"],
         "defaultCode": 60106,
         "grid": 16
       },
@@ -1806,11 +1572,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "lastfm",
-          "brand",
-          "social"
-        ],
+        "tags": ["lastfm", "brand", "social"],
         "defaultCode": 60107,
         "grid": 16
       },
@@ -1835,11 +1597,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "delicious",
-          "brand",
-          "social"
-        ],
+        "tags": ["delicious", "brand", "social"],
         "defaultCode": 60109,
         "grid": 16
       },
@@ -1865,11 +1623,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "stumbleupon",
-          "brand",
-          "social"
-        ],
+        "tags": ["stumbleupon", "brand", "social"],
         "defaultCode": 60110,
         "grid": 16
       },
@@ -1894,11 +1648,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "stackoverflow",
-          "brand",
-          "social"
-        ],
+        "tags": ["stackoverflow", "brand", "social"],
         "defaultCode": 60112,
         "grid": 16
       },
@@ -1923,11 +1673,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "pinterest",
-          "brand",
-          "social"
-        ],
+        "tags": ["pinterest", "brand", "social"],
         "defaultCode": 60114,
         "grid": 16
       },
@@ -1953,11 +1699,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "xing",
-          "brand",
-          "social"
-        ],
+        "tags": ["xing", "brand", "social"],
         "defaultCode": 60116,
         "grid": 16
       },
@@ -1965,9 +1707,7 @@
       "properties": {
         "ligatures": "xing2, brand75",
         "name": "xing2",
-        "codes": [
-          61231
-        ],
+        "codes": [61231],
         "order": 41,
         "id": 67,
         "prevSize": 32,
@@ -1985,12 +1725,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "flattr",
-          "brand",
-          "donate",
-          "social"
-        ],
+        "tags": ["flattr", "brand", "donate", "social"],
         "defaultCode": 60117,
         "grid": 16
       },
@@ -2015,11 +1750,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "foursquare",
-          "brand",
-          "social"
-        ],
+        "tags": ["foursquare", "brand", "social"],
         "defaultCode": 60118,
         "grid": 16
       },
@@ -2044,11 +1775,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "yelp",
-          "brand",
-          "social"
-        ],
+        "tags": ["yelp", "brand", "social"],
         "defaultCode": 60119,
         "grid": 16
       },
@@ -2074,11 +1801,7 @@
         "attrs": [],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "tags": [
-          "paypal",
-          "brand",
-          "donate"
-        ],
+        "tags": ["paypal", "brand", "donate"],
         "defaultCode": 60120,
         "grid": 16
       },
@@ -2086,9 +1809,7 @@
       "properties": {
         "ligatures": "paypal, brand79",
         "name": "paypal",
-        "codes": [
-          61234
-        ],
+        "codes": [61234],
         "order": 42,
         "id": 71,
         "prevSize": 32,
@@ -2135,11 +1856,7 @@
         "paths": [
           "M928 0h-832c-52.8 0-96 43.2-96 96v832c0 52.8 43.2 96 96 96h832c52.8 0 96-43.2 96-96v-832c0-52.8-43.2-96-96-96zM279 831.2c-48 0-87-38.6-87-86.6 0-47.6 39-86.8 87-86.8 48.2 0 87 39.2 87 86.8 0 48-39 86.6-87 86.6zM497.4 832c0-81.8-31.8-158.8-89.4-216.4-57.8-57.8-134.4-89.6-216-89.6v-125.2c237.6 0 431.2 193.4 431.2 431.2h-125.8zM719.6 832c0-291-236.6-528-527.4-528v-125.2c360 0 653 293.2 653 653.2h-125.6z"
         ],
-        "tags": [
-          "feed",
-          "rss",
-          "social"
-        ],
+        "tags": ["feed", "rss", "social"],
         "defaultCode": 60060,
         "grid": 16,
         "attrs": []
