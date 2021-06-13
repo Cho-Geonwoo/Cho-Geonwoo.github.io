@@ -4,7 +4,7 @@ title: "Django Rest FrameWork - Serialization"
 subtitle: "Django"
 categories: dev
 tags: backend Django
-comments: false
+comments: true
 ---
 
 - 목차
