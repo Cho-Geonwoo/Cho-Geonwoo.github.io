@@ -13,7 +13,7 @@ tags: Movie Review
 
 ---
 
-## The Platform
+## [The Platform](https://play.google.com/store/movies/details?id=z5NXCZ6qn4o.P)
 
 ![The Platform](https://raw.githubusercontent.com/Cho-Geonwoo/Cho-Geonwoo.github.io/master/assets/img/favorites/The_Platform.jpg)
 
