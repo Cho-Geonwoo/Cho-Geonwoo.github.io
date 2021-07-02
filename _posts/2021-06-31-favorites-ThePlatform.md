@@ -2,7 +2,7 @@
 layout: post
 title: "영화 리뷰 - The Platform"
 subtitle: "Movie Review"
-categories: dev
+categories: favorites
 tags: Movie Review
 ---
 
