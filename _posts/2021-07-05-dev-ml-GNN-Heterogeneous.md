@@ -73,7 +73,8 @@ Relation 개수의 증가는 학습 파라미터 수의 급격한 증가로 이�
 
 (h,r,t) triple에 대해서, tail이 relation을 통해 head와 연결되어 있으면 ${h + r\approx t}$이고, 거짓이라면 ${h+r \neq t}$이 되게 벡터들을 학습시킨다.
 
-Scoring function: ${f_r(h,t)=-||h+r-t||}$
+Scoring function:
+${f_r(h,t)=-||h+r-t||}$
 
 학습 방법은 다음과 같다.
 
@@ -99,7 +100,8 @@ Model entity를 표현하는 vector와 relation을 표현하는 vector의 차원
 
 ${h_\perp=M_rh, t_\perp=M_rt}$
 
-Scoring function: ${f_r(h,t)=-||h_\perp+r-t_\perp||}$
+Scoring function:
+${f_r(h,t)=-||h_\perp+r-t_\perp||}$
 
 하지만, TransR은 composition relationd을 학습할 수 없다.
 
@@ -117,6 +119,7 @@ ${f_r(h,t)=<h,r,t>=\Sigma_ih_ir_it_i}$
 
 Entity들과 relation들이 ${C^k}$에 있는 vector를 이용한다.
 
-Scoring function: ${f_r(h,t)=Re(\Sigma_ih_ir_i\overline{t}_i)}$
+Scoring function:
+${f_r(h,t)=Re(\Sigma_ih_ir_i\overline{t}_i)}$
 
 ![KG completion method](https://raw.githubusercontent.com/Cho-Geonwoo/Cho-Geonwoo.github.io/master/assets/img/contents/KG_completion_method.png)
