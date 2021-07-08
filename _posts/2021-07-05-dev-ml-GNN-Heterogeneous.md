@@ -103,15 +103,15 @@ ${h_\perp=M_rh, t_\perp=M_rt}$
 Scoring function:
 ${f_r(h,t)=-||h_\perp+r-t_\perp||}$
 
-하지만, TransR은 composition relationd을 학습할 수 없다.
+하지만, TransR은 composition relation을 학습할 수 없다.
 
-### (4) Bilinear Modeling
+### (4) DistMult
 
 Entity들과 Relation들이 같은 차원에 있는 vector를 이용하며, scoring function으로는 다음 함수를 이용한다.
 
 ${f_r(h,t)=<h,r,t>=\Sigma_ih_ir_it_i}$
 
-직관적으로 생각했을 때, ${hr}$과 t의 cosine similarity값과 같기 때문에 타당하다.
+직관적으로 생각했을 때, ${hr}$과 t의 cosine similarity 값과 같기 때문에 타당하다.
 
 하지만, inverse relation을 modelling할 수 없다. 또한, union of the hyperplane은 single hyperplane으로 묘사될 수 없기에, composition relation도 modelling할 수 없다.
 
