@@ -45,18 +45,33 @@ tags: ml/dl Gpipe PaperReview
 
 ![Pipeline Model Parallelism](https://raw.githubusercontent.com/Cho-Geonwoo/Cho-Geonwoo.github.io/master/assets/img/contents/Pipeline_Model_Parallelism.png)
 
+- model parallelization은 sequential하게 분리된 모델을 각각의 parallel worker에 등록해 학습하는 것이다. 당연한 말이지만, 앞선 worker의 연산 결과가 도착하기 전까지 다음 worker는 학습을 할 수 없다.
+
 ![Microbatch](https://raw.githubusercontent.com/Cho-Geonwoo/Cho-Geonwoo.github.io/master/assets/img/contents/Microbatch.png)
 
--> BatchNorm을 이용했을 때 데이터 해저드가 발생할 수 있을 것 같다.
+- 이로 인해 (b)와 같이 multiple worker를 효율적으로 사용하지 못하는 문제가 발생하는데, (c)와 같이 mini-batch를 micro-batch단위로 쪼개어 연산 속도를 증진시키자는 것이 핵심 아이디어다.
+
+> 필자의 생각: BatchNorm을 이용했을 때 데이터 해저드가 발생할 수 있을 것 같다.
 
 ### Re-materialization
 
 ![Rematerialization](https://raw.githubusercontent.com/Cho-Geonwoo/Cho-Geonwoo.github.io/master/assets/img/contents/Rematerialization.png)
 
+- 본래, 역전파를 위해 각 layer별 input을 저장하고 있었어야 하나, 모든 layer의 input을 저장하는 것은 메모리를 많이 차지하는 문제가 발생함.
+
 ![Rematerialization2](https://raw.githubusercontent.com/Cho-Geonwoo/Cho-Geonwoo.github.io/master/assets/img/contents/Rematerialization2.png)
+
+- 이에, sequential layer의 input만을 저장하고 있고, 그 안의 세부 layer의 input값은 backward 단계에서 계산하여 사용하자는 것이 핵심적인 아이디어다. memory는 크게 줄일 수 있으나, 연산량이 증가한다는 단점이 존재한다.
+- 논문 저자의 실험에 따르면, Amoebanet(82M의 파라미터를 가진 모델)에 대해서 실험을 했을 때 6.26GB에서 3.46GB로 메모리를 크게 절감하는 효과를 얻을 수 있었으나, 25%의 계산 시간이 더 소요됐다고 한다.
+- Without rematerialization
+  - Space Complexity: ${O (N L)}$
+- With rematerialization
+  - Space Complexity: ${O (N+LN/KM)}$
 
 ## Perfomance Optimization
 
-![Microbatch_Bubble](https://raw.githubusercontent.com/Cho-Geonwoo/Cho-Geonwoo.github.io/master/assets/img/contents/Microbacth_Bubble.png)
+![Microbatch_Bubble](https://raw.githubusercontent.com/Cho-Geonwoo/Cho-Geonwoo.github.io/master/assets/img/contents/Microbatch_Bubble.png)
+
+- 그림에서 볼 수 있듯이 Bubble이 발생하는데, 논문 저자의 말에 따르면, 무시할 수 있을 정도라고 한다.
 
 ![Rematerialization_Optimize](https://raw.githubusercontent.com/Cho-Geonwoo/Cho-Geonwoo.github.io/master/assets/img/contents/Rematerialization_Optimize.png)
