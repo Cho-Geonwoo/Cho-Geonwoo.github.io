@@ -64,14 +64,19 @@ tags: ml/dl Gpipe PaperReview
 - 이에, sequential layer의 input만을 저장하고 있고, 그 안의 세부 layer의 input값은 backward 단계에서 계산하여 사용하자는 것이 핵심적인 아이디어다. memory는 크게 줄일 수 있으나, 연산량이 증가한다는 단점이 존재한다.
 - 논문 저자의 실험에 따르면, Amoebanet(82M의 파라미터를 가진 모델)에 대해서 실험을 했을 때 6.26GB에서 3.46GB로 메모리를 크게 절감하는 효과를 얻을 수 있었으나, 25%의 계산 시간이 더 소요됐다고 한다.
 - Without rematerialization
-  - Space Complexity: ${O (N L)}$
+  - Space Complexity: ${O (N \times L)}$
 - With rematerialization
-  - Space Complexity: ${O (N+LN/KM)}$
+
+  - Space Complexity: ${O (N + L/K \times N/M)}$
+
+  L: 레이어 수, K: 파티션 수, N: mini-batch의 크기, M: 디바이스의 숫자
 
 ## Perfomance Optimization
 
 ![Microbatch_Bubble](https://raw.githubusercontent.com/Cho-Geonwoo/Cho-Geonwoo.github.io/master/assets/img/contents/Microbatch_Bubble.png)
 
-- 그림에서 볼 수 있듯이 Bubble이 발생하는데, 논문 저자의 말에 따르면, 무시할 수 있을 정도라고 한다.
+- 그림에서 볼 수 있듯이 Bubble이 발생하는데, 논문 저자의 말에 따르면, Bubble Overhead의 수식은 $${O({K-1}/{M+K-1})}$$인데, M이 4K보다 크면 무시할 수 있다고 한다.
 
 ![Rematerialization_Optimize](https://raw.githubusercontent.com/Cho-Geonwoo/Cho-Geonwoo.github.io/master/assets/img/contents/Rematerialization_Optimize.png)
+
+- Rematerialization을 적용하면 Backward를 적용하기 위해 Forward를 먼저 계산해야 하는데, pararellize할 수 있는 Forward 계산은 병렬로 수행할 수 있도록 scheduling하여 연산 시간을 줄일 수 있다고 한다.
