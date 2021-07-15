@@ -44,7 +44,7 @@ google_fonts: Lato
 
 # Set your Google Analytics id to receive `pageview` events.
 # To remove Google Anaylics from your page, remove the line below.
-google_analytics: UA-137374202-1
+google_analytics: G-HG66Z922S9
 
 # Setting a disqus shortname will enable the comment section on pages with `comments: true` in the front matter
 disqus: True
@@ -117,7 +117,6 @@ kramdown:
   math_engine: mathjax
   math_engine_opts:
     preview: true
-    preview_as_code: true
 
 compress_html:
   comments: ["<!-- ", " -->"]
