@@ -3,7 +3,7 @@ layout: post
 title: "Gpipe: Easy Scaling with Micro-Batch Pipeline Parllelism"
 subtitle: "논문 리뷰"
 categories: dev
-tags: ml/dl Gpipe PaperReview
+tags: ML/DL Gpipe Review
 ---
 
 - 목차

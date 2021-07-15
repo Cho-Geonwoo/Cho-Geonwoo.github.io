@@ -1,7 +1,7 @@
 ---
 layout: tag-blog
 title: ML/DL
-slug: ml/dl
+slug: ML/DL
 category: dev
 menu: false
 order: 1

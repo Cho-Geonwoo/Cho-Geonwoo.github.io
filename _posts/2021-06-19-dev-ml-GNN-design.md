@@ -3,7 +3,7 @@ layout: post
 title: "Setting up GNN Prediction Tasks"
 subtitle: "GNN study"
 categories: dev
-tags: ml/dl GNN
+tags: ML/DL GNN
 ---
 
 - 목차
