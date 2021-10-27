@@ -6,9 +6,18 @@ categories: dev
 tags: ML/DL GNN
 ---
 
-- 목차
-  - Can GNN node embeddings distinguish node's local neighborhood structures?
-  - Power of Aggregation Functions
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+- [Can GNN node embeddings distinguish node's local neighborhood structures?](#can-gnn-node-embeddings-distinguish-nodes-local-neighborhood-structures)
+- [Power of Aggregation Functions](#power-of-aggregation-functions)
+  - [(1) GCN(mean-pool)](#1-gcnmean-pool)
+  - [(2) GraphSAGE(max-pool)](#2-graphsagemax-pool)
+  - [(3) Injective multi-set function](#3-injective-multi-set-function)
+  - [(4) Universal Approximation Thm](#4-universal-approximation-thm)
+
+<!-- /code_chunk_output -->
 
 ---
 

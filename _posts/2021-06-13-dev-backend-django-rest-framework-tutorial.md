@@ -6,11 +6,16 @@ categories: dev
 tags: backend Django
 ---
 
-- 목차
-  - 모델 생성
-  - Serializer class 생성
-  - REST api 생성
-  - httpie 라이브러리로 테스트
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+- [모델 생성](#모델-생성)
+- [Serializer class 생성](#serializer-class-생성)
+- [REST api 생성](#rest-api-생성)
+- [httpie 라이브러리로 테스트](#httpie-라이브러리로-테스트)
+
+<!-- /code_chunk_output -->
 
 ---
 

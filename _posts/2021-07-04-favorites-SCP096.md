@@ -6,6 +6,19 @@ categories: favorites
 tags: Movie Review Short SCP
 ---
 
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+- [👻 SCP 재단이란? 👻](#scp-재단이란)
+- [SCP 294](#scp-294httpswwwyoutubecomwatchvanaoonc0ufot262s)
+- [줄거리 📖](#줄거리)
+- [소감 🎤](#소감)
+
+<!-- /code_chunk_output -->
+
+---
+
 ## 👻 SCP 재단이란? 👻
 
 괴담 마니아라면 한 번쯤은 들어봤을 이름. 오늘은 필자가 좋아하는 SCP 재단 시리즈 중 영화화된 괴담, SCP 294에 대한 스토리를 들고 왔다. 영화 리뷰에 들어가기 앞서! 독자님들의 이해를 돕고자 SCP 재단에 대해 짧게 소개를 하고자 한다. SCP 재단을 잘 아시는 분은 요 부분을 건너뛰셔도 좋다! ~~(건너뛴다면 SCP 096이 당신 집에 찾아가겠지만 말야 쿠후후)~~

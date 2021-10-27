@@ -6,12 +6,17 @@ categories: dev
 tags: ML/DL Gpipe Review
 ---
 
-- 목차
-  - Introduction: What is Gpipe?
-  - Algorithm:
-    - Pipeline Model Parallelism
-    - Re-materialization
-  - Performance Optimization
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+- [Introduction: What is Gpipe?](#introduction-what-is-gpipe)
+- [Algorithm](#algorithm)
+  - [Pipeline Model Parallelism](#pipeline-model-parallelism)
+  - [Re-materialization](#re-materialization)
+- [Perfomance Optimization](#perfomance-optimization)
+
+<!-- /code_chunk_output -->
 
 ---
 

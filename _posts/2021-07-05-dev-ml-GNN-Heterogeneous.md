@@ -6,10 +6,22 @@ categories: dev
 tags: ML/DL GNN
 ---
 
-- 목차
-  - Relational Graph Convolutional Network (Relational GCN)
-  - Knowledge Graphs (KG)
-  - Knowledge Graph Completion (KG Completion)
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+- [Relational Graph Convolutional Network (Relational GCN)](#relational-graph-convolutional-network-relational-gcn)
+  - [(1) Scalability](#1-scalability)
+  - [(2) 학습 방법](#2-학습-방법)
+- [Knowledge Graphs (KG)](#knowledge-graphs-kg)
+- [Knowledge Graph Completion (KG Completion)](#knowledge-graph-completion-kg-completion)
+  - [(1) TransE](#1-transe)
+  - [(2) Relation Patterns](#2-relation-patterns)
+  - [(3) TransR](#3-transr)
+  - [(4) DistMult](#4-distmult)
+  - [(5) ComplEx](#5-complex)
+
+<!-- /code_chunk_output -->
 
 ---
 

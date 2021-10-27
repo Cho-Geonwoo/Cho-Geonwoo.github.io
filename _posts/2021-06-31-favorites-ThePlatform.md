@@ -6,6 +6,19 @@ categories: favorites
 tags: Movie Review
 ---
 
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+- [들어가기 앞서😉](#들어가기-앞서)
+- [The Platform](#the-platformhttpsplaygooglecomstoremoviesdetailsidz5nxcz6qn4op)
+- [줄거리](#줄거리)
+- [소감](#소감)
+
+<!-- /code_chunk_output -->
+
+---
+
 ## 들어가기 앞서😉
 
 매번 블로그 글을 꾸준히 써야겠다고 다짐하면서도, 귀찮음과 글을 쓰다보면 발견하는 부족한 필력에 항상 한 두 줄 끄적이다가 말곤 하는 나...

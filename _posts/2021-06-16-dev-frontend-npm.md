@@ -6,10 +6,15 @@ categories: dev
 tags: frontend npm
 ---
 
-- 목차
-  - npm 7의 성과
-  - 두드러지는 변화
-  - 깨알 야크 쉐이빙
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+- [npm 7의 성과](#npm-7의-성과)
+- [두드러지는 변화](#두드러지는-변화)
+- [깨알 야크 쉐이빙](#깨알-야크-쉐이빙)
+
+<!-- /code_chunk_output -->
 
 ---
 

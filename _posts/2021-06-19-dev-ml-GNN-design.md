@@ -6,8 +6,15 @@ categories: dev
 tags: ML/DL GNN
 ---
 
-- 목차
-  - Why Splitting Graphs is Special
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+- [Why Splitting Graphs is Special](#why-splitting-graphs-is-special)
+  - [Transductive Setting](#transductive-setting)
+  - [Inductive Setting](#inductive-setting)
+
+<!-- /code_chunk_output -->
 
 ---
 
