@@ -44,6 +44,8 @@ tags: ML/DL Gpipe Review
 - 특정 task나 architecture에 종속되지 않음.
 - Image Classification과 Machine Translation에 효율적임.
 
+---
+
 ## Algorithm
 
 ### Pipeline Model Parallelism
@@ -75,6 +77,8 @@ tags: ML/DL Gpipe Review
   - Space Complexity: ${O (N + L/K \times N/M)}$
 
   L: 레이어 수, K: 파티션 수, N: mini-batch의 크기, M: 디바이스의 숫자
+
+---
 
 ## Perfomance Optimization
 

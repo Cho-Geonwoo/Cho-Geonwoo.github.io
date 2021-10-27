@@ -27,6 +27,8 @@ tags: frontend npm
 - code coverage를 20%가까이 향상시켰다고 한다. (npm 7에서는 [97%](https://coveralls.io/github/npm/cli)이고, npm 6에서는 [77%](https://coveralls.io/github/npm/cli?branch=v6)이다)
 - 다양한 예제에 대한 여러 [benchmarks에 두드러지는 성능 향상](https://github.com/npm/benchmarks)을 보였다고 한다.
 
+---
+
 ## 두드러지는 변화
 
 - lockfile의 변화

@@ -19,7 +19,7 @@ tags: backend Django
 
 ---
 
-### 모델 생성
+## 모델 생성
 
 Serializer를 테스트해보기 위한 간단한 모델을 생성하자.
 
@@ -46,7 +46,7 @@ class Snippet(models.Model):
 
 ---
 
-### Serializer class 생성
+## Serializer class 생성
 
 ```python
 class SnippetSerializer(serializers.ModelSerializer):
@@ -63,7 +63,7 @@ default `create()`와 `update()` 메소드를 제공하는데, 해당 메소드�
 
 ---
 
-### REST api 생성
+## REST api 생성
 
 views.py에 다음 코드를 추가한다.
 
@@ -141,7 +141,7 @@ urlpatterns = [
 
 ---
 
-### httpie 라이브러리로 테스트
+## httpie 라이브러리로 테스트
 
 pip을 이용해 httpie 라이브러리를 설치한다.
 
