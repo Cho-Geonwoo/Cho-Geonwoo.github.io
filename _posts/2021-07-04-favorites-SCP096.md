@@ -3,7 +3,7 @@ layout: post
 title: "영화 리뷰 - SCP 294"
 subtitle: "Movie Review"
 categories: favorites
-tags: Movie Review Short SCP
+tags: favorites Movie Review Short SCP
 ---
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->

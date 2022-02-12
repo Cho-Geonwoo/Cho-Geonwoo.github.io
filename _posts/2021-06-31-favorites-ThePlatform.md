@@ -3,7 +3,7 @@ layout: post
 title: "영화 리뷰 - The Platform"
 subtitle: "Movie Review"
 categories: favorites
-tags: Movie Review
+tags: favorites Movie Review
 ---
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
