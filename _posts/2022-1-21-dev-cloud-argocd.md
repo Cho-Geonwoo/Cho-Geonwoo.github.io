@@ -9,7 +9,10 @@ tags: cloud ArgoCD
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 <!-- code_chunk_output -->
-
+- [1. ArgoCD란?](#1-argocd란)
+- [2. ArgoCD pipeline 구성](#2-argocd-pipeline-구성)
+- [3. ArgoCD에 application 추가하기](#3-argocd에-application-추가하기)
+- [4. Argo CD 장점](#4-argo-cd-장점)
 <!-- /code_chunk_output -->
 
 ## 1. ArgoCD란?
