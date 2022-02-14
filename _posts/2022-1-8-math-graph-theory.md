@@ -9,6 +9,25 @@ tags: math graph-theory
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 <!-- code_chunk_output -->
+
+- [1. Connectivity](#1-connectivity)
+  - [Thm 5.1](#thm-51)
+  - [Thm 5.2](#thm-52)
+  - [Corollary 5.3](#corollary-53)
+- [2. Eulerian graphs](#2-eulerian-graphs)
+  - [LEMMA 6.1](#lemma-61)
+  - [LEMMA 6.2](#lemma-62)
+  - [COROLLARY 6.3](#corollary-63)
+  - [COROLLARY 6.4](#corollary-64)
+  - [Thm 6.5](#thm-65)
+- [3. Hamiltonian graphs](#3-hamiltonian-graphs)
+  - [Thm 7.1](#thm-71)
+  - [Corollary 7.2](#corollary-72)
+- [4. Some algorithms](#4-some-algorithms)
+  - [1) The Shortest path problem](#1-the-shortest-path-problem)
+  - [2) The Chinese postman problem](#2-the-chinese-postman-problem)
+  - [3) The travelling salesman problem](#3-the-travelling-salesman-problem)
+
 <!-- /code_chunk_output -->
 
 
