@@ -4,6 +4,7 @@ title: Big Data
 slug: big-data
 category: dev
 menu: false
-submenu: true
-order: 7
+order: 6
+description: >
+  Big data 공부
 ---
