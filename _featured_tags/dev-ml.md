@@ -6,5 +6,5 @@ category: dev
 menu: false
 order: 1
 description: >
-  Big data 공부
+  머신러닝 공부
 ---
