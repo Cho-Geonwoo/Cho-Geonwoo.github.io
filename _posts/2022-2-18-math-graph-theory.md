@@ -1,8 +1,28 @@
-# Trees
-
+---
+layout: post
+title: "Graph Theory"
+subtitle: "Tree"
+categories: dev
+tags: math graph-theory
 ---
 
----
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+- [1. Properties of trees](#1-properties-of-trees)
+  - [Thm 9.1](#thm-91)
+  - [Corollary 9.2](#corollary-92)
+  - [Thm 9.3](#thm-93)
+- [2. Counting Trees](#2-counting-trees)
+  - [Cayley’s Thm](#cayleys-thm)
+  - [Corollary 10.2](#corollary-102)
+  - [Matrix-tree thm](#matrix-tree-thm)
+- [3. More applications](#3-more-applications)
+  - [1) The minimum connector problem](#1-the-minimum-connector-problem)
+  - [Thm 11.1](#thm-111)
+
+<!-- /code_chunk_output -->
 
 ## 1. Properties of trees
 
