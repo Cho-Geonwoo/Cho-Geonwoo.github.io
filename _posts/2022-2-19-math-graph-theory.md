@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Graph Theory"
-subtitle: "Planarity"
+title: "Planarity"
+subtitle: "Graph Theory"
 categories: dev
 tags: math graph-theory
 ---

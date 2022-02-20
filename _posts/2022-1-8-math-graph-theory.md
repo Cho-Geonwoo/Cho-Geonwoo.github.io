@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Graph Theory"
-subtitle: "Path and Cycles"
+title: "Path and Cycles"
+subtitle: "Graph Theory 정리"
 categories: dev
 tags: math graph-theory
 ---
@@ -59,8 +59,7 @@ Thm 5.2에 k = 1 즉 graph가 1개의 component로 이루어졌을 경우를 가
 
 > **disconnecting set**: a connected graph _G_ is a set of edges whose removal disconnects G
 > **cutset**: no proper subset of which is a disconnecting set
-> **bridge**: a cutset with only one edge _e_
-> **edge connectivity $\lambda$_(G)_**: minimum number of edges that we need to delete in order to disconnect G \***_G is k-edge connected if $\lambda$_(G) ≥ k.\***
+> **bridge**: a cutset with only one edge _e_ > **edge connectivity $\lambda$_(G)_**: minimum number of edges that we need to delete in order to disconnect G \***_G is k-edge connected if $\lambda$_(G) ≥ k.\***
 
 > **separating set**: set of vertices whose deletion disconnects G;
 > **cut-vertex**: a separating set contains only one vertex v

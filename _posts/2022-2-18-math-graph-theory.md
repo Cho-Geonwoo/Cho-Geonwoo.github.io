@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Graph Theory"
-subtitle: "Tree"
+title: "Tree"
+subtitle: "Graph Theory 정리"
 categories: dev
 tags: math graph-theory
 ---
