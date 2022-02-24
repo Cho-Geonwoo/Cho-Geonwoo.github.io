@@ -131,6 +131,5 @@ Anonymous walk를 이용하는 방법:
 ![Equation4](https://raw.githubusercontent.com/Cho-Geonwoo/Cho-Geonwoo.github.io/master/assets/img/contents/gnn/embeddings/equation4.png)
 
 - anonymous walk를 time state에 따라 나누어 사용하는 방법도 있지만, next walk를 예측할 수 있도록 embedding 을 학습시켜보자.
-![Equation5](https://raw.githubusercontent.com/Cho-Geonwoo/Cho-Geonwoo.github.io/master/assets/img/contents/gnn/embeddings/equation5.png)
 
 ![Equation6](https://raw.githubusercontent.com/Cho-Geonwoo/Cho-Geonwoo.github.io/master/assets/img/contents/gnn/embeddings/equation6.png)
