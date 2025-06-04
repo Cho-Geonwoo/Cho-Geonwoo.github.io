@@ -1,4 +1,607 @@
----
-layout: blog
-title: Home
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-FQNMP9HZQG"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-FQNMP9HZQG");
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <title>Geonwoo Cho</title>
+
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <meta name="author" content="Geonwoo Cho" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>"
+    />
+    <style>
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        border: 0px;
+        border-spacing: 0px;
+        border-collapse: separate;
+        margin-right: auto;
+        margin-left: auto;
+        align-items: center;
+        /* Center-aligns items vertically in desktop mode */
+      }
+
+      .text-content {
+        padding: 2.5%;
+        width: 63%;
+        vertical-align: middle;
+        order: 1;
+      }
+
+      .image-content {
+        padding: 2.5%;
+        width: 37%;
+        max-width: 37%;
+        order: 2;
+        display: flex;
+        justify-content: center;
+        /* Center-aligns image horizontally */
+      }
+
+      .image-content img {
+        width: 100%;
+        max-width: 100%;
+      }
+
+      @media screen and (max-width: 768px) {
+        .text-content,
+        .image-content {
+          width: 100%;
+          max-width: 100%;
+          order: 1;
+        }
+
+        .image-content {
+          order: 2;
+          display: flex;
+          justify-content: center;
+          /* Center-aligns image horizontally in mobile mode */
+        }
+
+        .image-content img {
+          width: auto;
+          max-width: 100%;
+          height: auto;
+          max-height: 300px;
+          /* Adjust this value as needed */
+        }
+      }
+    </style>
+  </head>
+
+  <body class="bg_colour">
+    <table
+      <table
+      border="0"
+      class="bg_colour"
+      style="
+        width: 100%;
+        max-width: 800px;
+        border: 0px;
+        border-spacing: 0px;
+        border-collapse: separate;
+        margin-right: auto;
+        margin-left: auto;
+      "
+    >
+      <tbody>
+        <tr style="padding: 0px">
+          <td style="padding: 0px">
+            <div class="container">
+              <div class="text-content">
+                <p style="text-align: left">
+                  <name>Geonwoo Cho</name>
+                </p>
+                <p>
+                  Hi! I am an undergrad at GIST, where I work with
+                  <a href="https://sundong.kim/">Sundong Kim</a>.
+                </p>
+                <p>
+                  My goal is to develop intelligent robots that achieve
+                  super-human performance that go beyond the level of
+                  human-generated behaviors. To that end, my research focuses on
+                  reinforcement learning that enables agents to discover new
+                  behaviors through online experiences. To further enable such
+                  agents to understand the world, my research also focuses on
+                  world models, video generation, and representation learning.
+                </p>
+
+                <p>
+                  Feel free to send me an e-mail if you want to have a chat!<br /><b
+                    >Contact</b
+                  >: mail AT gwcho.public@gmail.com
+                </p>
+                <p style="text-align: center">
+                  <a
+                    href="https://scholar.google.com/citations?user=9dIWhLEAAAAJ&hl=en"
+                    >Google Scholar</a
+                  >&nbsp/&nbsp
+                  <a href="https://x.com/GeonwooC51050">Twitter</a>&nbsp/&nbsp
+                  <a href="https://github.com/Cho-Geonwoo">Github</a>&nbsp/&nbsp
+                  <a
+                    href="https://drive.google.com/file/d/1kkUpOcuHnuX6-yel8iRyK5FQL3rZXtK5/view?usp=sharing"
+                    >CV (May. 2025)</a
+                  >
+                </p>
+              </div>
+              <div class="image-content">
+                <a href="assets/img/geonwoo.png"
+                  ><img
+                    alt="profile photo"
+                    src="assets/img/geonwoo.png"
+                    class="hoverZoomLink"
+                /></a>
+              </div>
+            </div>
+            <hr class="soft" />
+
+            <button
+              style="
+                border: 0px transparent;
+                background-color: transparent;
+                outline: none;
+              "
+              type="button"
+              class="collapsible"
+              data-toggle="collapse"
+              data-target="#content-research"
+              id="research"
+            >
+              <heading>Publications</heading>
+            </button>
+            <div id="content-research" class="collapse in">
+              <table
+                style="
+                  width: 100%;
+                  border: 0px;
+                  border-spacing: 0px;
+                  border-collapse: separate;
+                  margin-right: auto;
+                  margin-left: auto;
+                "
+              >
+                <tbody>
+                  <tr onmouseout="amped_stop()" onmouseover="amped_start()">
+                    <td
+                      style="padding: 20px; width: 25%; vertical-align: middle"
+                    >
+                      <div class="one">
+                        <img
+                          src="assets/img/papers/quadruped_rotation.gif"
+                          width="160"
+                        />
+                      </div>
+                      <script type="text/javascript">
+                        function amped_start() {
+                          document.getElementById("amped_image").style.opacity =
+                            "1";
+                        }
+
+                        function amped_stop() {
+                          document.getElementById("amped_image").style.opacity =
+                            "0";
+                        }
+                        amped_stop();
+                      </script>
+                    </td>
+                    <td
+                      style="padding: 20px; width: 75%; vertical-align: middle"
+                    >
+                      <a href="https://geonwoo.me/amped/">
+                        <papertitle
+                          >AMPED: Adaptive Multi-objective Projection for
+                          balancing Exploration and skill Diversification
+                        </papertitle>
+                      </a>
+                      <br />
+                      <strong>Geonwoo Cho*</strong>, Jaemoon Lee*,
+                      <a href="https://jaegyunn.github.io/">Jaegyun Im</a>, Subi
+                      Lee,
+                      <a
+                        href="https://scholar.google.com/citations?hl=en&user=6CeMbuMAAAAJ"
+                        >Jihwan Lee</a
+                      >,
+                      <a href="https://sundong.kim/">Sundong Kim</a>
+                      <br />
+                      <em>Preprint</em>
+                      <br />
+                      <!-- <a href="https://arxiv.org/abs/2505.22642">Paper</a> / -->
+                      <a href="https://geonwoo.me/AMPED/">Website</a> /
+                      <a href="https://github.com/Cho-Geonwoo/AMPED">Code</a>
+                      <p>
+                        We introduce AMPED, a framework for skill‐based
+                        reinforcement learning that simultaneously maximizes
+                        state coverage and skill diversity through several
+                        carefully designed components.
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+
+                <tbody>
+                  <tr onmouseout="traced_stop()" onmouseover="traced_start()">
+                    <td
+                      style="padding: 20px; width: 25%; vertical-align: middle"
+                    >
+                      <div class="one">
+                        <img src="assets/img/papers/bw_stair.gif" width="160" />
+                      </div>
+                      <script type="text/javascript">
+                        function traced_start() {
+                          document.getElementById(
+                            "traced_image"
+                          ).style.opacity = "1";
+                        }
+
+                        function traced_stop() {
+                          document.getElementById(
+                            "traced_image"
+                          ).style.opacity = "0";
+                        }
+                        traced_stop();
+                      </script>
+                    </td>
+                    <td
+                      style="padding: 20px; width: 75%; vertical-align: middle"
+                    >
+                      <a href="https://geonwoo.me/traced/">
+                        <papertitle
+                          >TRACED: Transition-aware Regret Approximation with
+                          Co-learnability for Environment Design
+                        </papertitle>
+                      </a>
+                      <br />
+                      <strong>Geonwoo Cho</strong>,
+                      <a href="https://jaegyunn.github.io/">Jaegyun Im</a>,
+                      <a
+                        href="https://scholar.google.com/citations?hl=en&user=6CeMbuMAAAAJ"
+                        >Jihwan Lee</a
+                      >, Hojun Yi,
+                      <a href="https://sejinkimm.github.io/">Sejin Kim</a>,
+                      <a href="https://sundong.kim/">Sundong Kim</a>
+                      <br />
+                      <em>Preprint</em>
+                      <br />
+                      <!-- <a href="https://arxiv.org/abs/2505.22642">Paper</a> / -->
+                      <a href="https://geonwoo.me/TRACED/">Website</a> /
+                      <a href="https://github.com/Cho-Geonwoo/TRACED">Code</a>
+                      <p>
+                        We propose TRACED, a regret‐based curriculum that
+                        augments value loss with transition‐prediction loss and
+                        a lightweight co‐learnability metric.
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <hr class="soft" />
+
+            <button
+              style="
+                border: 0px transparent;
+                background-color: transparent;
+                outline: none;
+              "
+              type="button"
+              class="collapsible"
+              data-toggle="collapse"
+              data-target="#content-research"
+              id="research"
+            >
+              <heading>Research Experience</heading>
+            </button>
+
+            <div id="content-research" class="collapse in">
+              <table
+                border="0"
+                class="bg_colour"
+                style="
+                  padding: 20px;
+                  width: 100%;
+                  border: 0px;
+                  border-spacing: 0px;
+                  border-collapse: separate;
+                  margin-right: auto;
+                  margin-left: auto;
+                "
+              >
+                <tbody>
+                  <tr>
+                    <td
+                      style="padding: 10px; width: 100%; vertical-align: top"
+                      colspan="2"
+                    >
+                      <strong>Berkeley, Biostatistics</strong>
+                      <span style="color: gray"> (Jan 2025 – Present)</span
+                      ><br />
+                      Co-Advised by
+                      <a
+                        href="https://lexinli.biostat.berkeley.edu/"
+                        target="_blank"
+                        >Prof. Lexin Li</a
+                      >
+                      and
+                      <a href="https://www.yuhuazhu.org/" target="_blank"
+                        >Prof. Yuhua Zhu</a
+                      >
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td
+                      style="padding: 10px; width: 100%; vertical-align: top"
+                      colspan="2"
+                    >
+                      <strong>GIST, DataScience Lab</strong>
+                      <span style="color: gray"> (Apr 2024 – Present)</span
+                      ><br />
+                      Advised by
+                      <a href="https://sundong.kim/" target="_blank"
+                        >Prof. Sundong Kim</a
+                      >
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td
+                      style="padding: 10px; width: 100%; vertical-align: top"
+                      colspan="2"
+                    >
+                      <strong>GIST, AITER Lab</strong>
+                      <span style="color: gray"> (Jun 2020 – Dec 2020)</span
+                      ><br />
+                      Advised by
+                      <a
+                        href="https://sites.google.com/view/gist-aiter/members/professor"
+                        target="_blank"
+                        >Prof. Hongkook Kim</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <hr class="soft" />
+
+            <button
+              style="
+                border: 0px transparent;
+                background-color: transparent;
+                outline: none;
+              "
+              type="button"
+              class="collapsible"
+              data-toggle="collapse"
+              data-target="#content-work"
+              id="work"
+            >
+              <heading>Work Experience</heading>
+            </button>
+
+            <div id="content-work" class="collapse in">
+              <table
+                border="0"
+                class="bg_colour"
+                style="
+                  padding: 20px;
+                  width: 100%;
+                  border: 0px;
+                  border-spacing: 0px;
+                  border-collapse: separate;
+                  margin-right: auto;
+                  margin-left: auto;
+                "
+              >
+                <tbody>
+                  <tr>
+                    <td
+                      style="padding: 10px; width: 100%; vertical-align: top"
+                      colspan="2"
+                    >
+                      <strong>Team Learners</strong>
+                      <span style="color: gray"> (Aug 2023 – Jan 2024)</span
+                      ><br />
+                      Machine Learning Software Engineer
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td
+                      style="padding: 10px; width: 100%; vertical-align: top"
+                      colspan="2"
+                    >
+                      <strong>Match Group/Tinder, Hyperconnect LLC</strong>
+                      <span style="color: gray"> (Jun 2022 – Jul 2023)</span
+                      ><br />
+                      Machine Learning Software Engineer
+                      <br />
+                      Worked as part of the mandatory military service in the
+                      Republic of Korea
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td
+                      style="padding: 10px; width: 100%; vertical-align: top"
+                      colspan="2"
+                    >
+                      <strong>Business Canvas</strong>
+                      <span style="color: gray"> (Dec 2021 – Jun 2022)</span
+                      ><br />
+                      Software Engineer
+                      <br />
+                      Worked as part of the mandatory military service in the
+                      Republic of Korea
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td
+                      style="padding: 10px; width: 100%; vertical-align: top"
+                      colspan="2"
+                    >
+                      <strong>Algorima</strong>
+                      <span style="color: gray"> (Dec 2020 – Jun 2021)</span
+                      ><br />
+                      Software Engineer
+                      <br />
+                      Worked as part of the mandatory military service in the
+                      Republic of Korea
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <hr class="soft" />
+
+            <button
+              style="
+                border: 0px transparent;
+                background-color: transparent;
+                outline: none;
+              "
+              type="button"
+              class="collapsible"
+              data-toggle="collapse"
+              data-target="#content-education"
+              id="education"
+            >
+              <heading>Education</heading>
+            </button>
+
+            <div id="content-education" class="collapse in">
+              <table
+                border="0"
+                class="bg_colour"
+                style="
+                  padding: 20px;
+                  width: 100%;
+                  border: 0px;
+                  border-spacing: 0px;
+                  border-collapse: separate;
+                  margin-right: auto;
+                  margin-left: auto;
+                "
+              >
+                <tbody>
+                  <tr>
+                    <td
+                      style="padding: 10px; width: 100%; vertical-align: top"
+                      colspan="2"
+                    >
+                      <strong
+                        >Gwangju Institute of Science and Technology</strong
+                      >
+                      <span style="color: gray"> (Feb 2019 – Present)</span
+                      ><br />
+                      B.S. in Electrical Engineering and Computer Science, Minor
+                      in Mathematics
+                      <br />
+                      Leave of absence for military service: Sep 2021 - Sep 2023
+                      (3 years)
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td
+                      style="padding: 10px; width: 100%; vertical-align: top"
+                      colspan="2"
+                    >
+                      <strong>University of California, Berkeley</strong>
+                      <span style="color: gray"> (Jan 2025 – Aug 2025)</span
+                      ><br />
+                      Exchange Student
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td
+                      style="padding: 10px; width: 100%; vertical-align: top"
+                      colspan="2"
+                    >
+                      <strong>Korea Science Academy of KAIST</strong>
+                      <span style="color: gray"> (Mar 2016 – Feb 2019)</span
+                      ><br />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td
+                      style="padding: 10px; width: 100%; vertical-align: top"
+                      colspan="2"
+                    >
+                      <strong>University of Wisconsin–Madison</strong>
+                      <span style="color: gray"> (Jun 2018 – Jul 2018)</span
+                      ><br />
+                      Exchange Student
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <hr class="soft" />
+
+            <table
+              style="
+                width: 100%;
+                border: 0px;
+                border-spacing: 0px;
+                border-collapse: separate;
+                margin-right: auto;
+                margin-left: auto;
+              "
+            >
+              <tbody>
+                <tr>
+                  <td style="padding: 0px">
+                    <br />
+                    <p style="text-align: right; font-size: small">
+                      Website templates from
+                      <a href="https://jonbarron.info/" target="_blank">here</a>
+                      and
+                      <a href="https://rishabkhincha.github.io/" target="_blank"
+                        >here</a
+                      >.
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

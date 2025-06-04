@@ -1,7 +1,1 @@
-## 소개
-
-스스로 꾸준히 발전하는 모습을 기록하고 싶어 블로그를 운영하기 시작했습니다 :)
-
-- 다양한 IT 기술들에 관심이 많은 새내기 개발자입니다!
-- 블록체인, 인공지능, Cloud Computing에 큰 흥미를 느끼고 있습니다^^
-- 소소하지만 살면서 얻은 깨달음이나, 공부하고 배웠던 것들을 공유할 예정이니 가끔 들려주시면 감사하겠습니다. :)
+This is the source code to Jon Barron's public academic website: https://jonbarron.info/. You are welcome to clone this code for your own personal use, just please attribute the source to the original website or to this repo. If you do clone this website, feel free to add an attribution link to your own downstream website in index.html if you want.
