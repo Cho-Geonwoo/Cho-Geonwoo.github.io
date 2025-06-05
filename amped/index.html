@@ -37,12 +37,12 @@
 
   <body>
     <section class="hero">
-      <div class="hero-body" style="padding-bottom: 1rem">
+      <div class="hero-body" style="margin-bottom: -5rem">
         <div class="container is-max-desktop">
           <div class="columns is-centered">
             <div class="column has-text-centered">
               <h1 class="title is-1 publication-title">
-                <b style="color: rgb(1, 132, 234)">AMPED</b>:
+                <b>AMPED</b>:
                 <span class="subtitle-text"
                   >Adaptive Multi-objective Projection for balancing Exploration
                   and skill Diversification</span
@@ -60,6 +60,7 @@
                     >Jaegyun Im</a
                   ><sup>1</sup>,
                 </span>
+                <br />
                 <span class="author-block"> Subi Lee<sup>1</sup>, </span>
                 <span class="author-block">
                   <a
@@ -79,7 +80,7 @@
                   ><sup>1</sup>Gwangju Institute of Science and Technology</span
                 >
                 <span class="author-block"
-                  ><sup>2</sup>Seoul Nataional University</span
+                  ><sup>2</sup>Seoul National University</span
                 >
               </div>
 
@@ -123,23 +124,574 @@
                       <span>Code</span>
                     </a>
                   </span>
-
-                  <!-- X Post Link. -->
-                  <!-- <span class="link-block">
-                  <a target="_blank" href="https://x.com/younggyoseo/status/1928127711308042474"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <span class="x-icon" aria-label="X">𝕏</span>
-                    </span>
-                    <span>Posts</span>
-                  </a>
-                </span> -->
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <section class="Graphical Scheme">
+        <div class="container is-max-desktop" style="margin-bottom: -3em">
+          <div class="hero-body">
+            <img
+              src="./static/images/graphical_scheme.png"
+              alt="Graphical Scheme"
+              class="graphical-scheme"
+            />
+            <h2 class="subtitle has-text-centered">
+              <b>AMPED</b> is a skill-based reinforcement learning algorithm
+              designed to explicitly balance exploration and skill diversity.
+            </h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column is-full-width">
+              <h3 class="title is-4">Overview</h3>
+              <div class="content has-text-justified">
+                <ul>
+                  <li>
+                    <b>AMPED</b> is a skill-based reinforcement learning (SBRL)
+                    framework that effectively balances exploration and skill
+                    diversity, enabling generalizable skill acquisition.
+                  </li>
+                  <li>
+                    <b>AMPED is modular and generalizable.</b> Built on standard
+                    actor-critic architectures, each component—RND and
+                    entropy-driven exploration, AnInfoNCE-based diversity,
+                    gradient surgery, and an SAC-based skill selector—can be
+                    seamlessly integrated into other actor-critic frameworks
+                    with minimal architectural modifications.
+                  </li>
+                  <li>
+                    <b>AMPED is performant.</b> On the Unsupervised
+                    Reinforcement Learning Benchmark (URLB), AMPED consistently
+                    outperforms strong baselines such as CeSD, ComSD, and BeCL
+                    across a wide range of challenging locomotion and
+                    manipulation tasks.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="columns is-centered">
+            <div class="column is-full-width">
+              <h3 class="title is-4">Idea</h3>
+              <div class="content has-text-justified">
+                <figure style="text-align: center">
+                  <img
+                    src="static/images/overall_pipeline.png"
+                    alt="AMPED Overview Diagram"
+                    style="max-width: 100%"
+                  />
+                  <!-- <figcaption>
+                    <i
+                      >Figure: Overall structure of AMPED—pretraining diverse
+                      skills with balanced objectives, followed by task-adaptive
+                      skill selection.</i
+                    >
+                  </figcaption> -->
+                </figure>
+                <ul>
+                  <li>
+                    We propose <b>AMPED</b>, a principled framework that unifies
+                    exploration and skill diversity via
+                    <em>gradient-level balancing</em> and
+                    <em>adaptive skill reuse</em>.
+                  </li>
+                  <li>
+                    During <b>skill pretraining</b>, the agent learns a diverse
+                    repertoire of behaviors by optimizing both
+                    <em>RND and entropy-driven exploration</em> and
+                    <em>contrastive skill separation</em>, with gradient
+                    conflicts resolved via <b>PCGrad</b>.
+                  </li>
+                  <li>
+                    In the <b>fine-tuning phase</b>, AMPED employs a
+                    <b>skill selector</b> trained via reinforcement learning
+                    (e.g., SAC) to dynamically choose skills based on
+                    task-specific rewards.
+                  </li>
+                  <li>
+                    This two-stage structure allows AMPED to decouple
+                    unsupervised pretraining from task-specific learning,
+                    leading to better sample efficiency and generalization.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <style>
+            summary {
+              cursor: pointer;
+            }
+          </style>
+
+          <hr />
+
+          <div class="columns is-centered">
+            <div class="column is-full-width">
+              <h3 class="title is-4">Algorithms</h3>
+
+              <!-- Algorithm 1 -->
+              <div class="box">
+                <details>
+                  <summary>
+                    <b
+                      >Algorithm 1: Gradient Surgery (Click to see the full
+                      algorithm)</b
+                    >
+                  </summary>
+                  <figure style="margin-top: 1em; text-align: center">
+                    <img
+                      src="static/images/algorithm1.png"
+                      alt="Gradient Surgery"
+                      style="max-width: 100%"
+                    />
+                  </figure>
+                </details>
+                <p>
+                  This procedure resolves gradient conflicts between the
+                  exploration and diversity objectives. If a negative inner
+                  product is detected between their gradients, one is projected
+                  onto the orthogonal complement of the other. This ensures that
+                  the two objectives do not interfere destructively during
+                  optimization.
+                </p>
+              </div>
+
+              <!-- Algorithm 2 -->
+              <div class="box">
+                <details>
+                  <summary>
+                    <b
+                      >Algorithm 2: Unsupervised Pretraining with Intrinsic
+                      Rewards (Click to see the full algorithm)</b
+                    >
+                  </summary>
+                  <figure style="margin-top: 1em; text-align: center">
+                    <img
+                      src="static/images/algorithm2.png"
+                      alt="Unsupervised Pretraining"
+                      style="max-width: 100%"
+                    />
+                  </figure>
+                </details>
+                <p>
+                  The agent collects diverse experiences by sampling skills and
+                  optimizing both exploration (via entropy and RND) and skill
+                  diversity (via contrastive learning). Intrinsic rewards are
+                  computed and their gradients are combined using gradient
+                  surgery, enabling stable pretraining without manual loss
+                  balancing.
+                </p>
+              </div>
+
+              <!-- Algorithm 3 -->
+              <div class="box">
+                <details>
+                  <summary>
+                    <b
+                      >Algorithm 3: Fine-tuning with Extrinsic Rewards and Skill
+                      Selection (Click to see the full algorithm)</b
+                    >
+                  </summary>
+                  <figure style="margin-top: 1em; text-align: center">
+                    <img
+                      src="static/images/algorithm3.png"
+                      alt="Skill Selector Fine-tuning"
+                      style="max-width: 100%"
+                    />
+                  </figure>
+                </details>
+                <p>
+                  In the downstream phase, a learned skill selector picks the
+                  best skill for the task based on the current state. The agent
+                  executes actions using the selected skill, and both the policy
+                  and selector are updated using extrinsic rewards. This
+                  adaptive reuse enables efficient skill transfer.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="columns is-centered">
+            <div class="column is-full-width">
+              <h3 class="title is-4">Experiments</h3>
+
+              <div class="columns is-centered">
+                <div class="column is-full-width">
+                  <h4 class="title is-5" style="margin-bottom: 1rem">
+                    1. URLB Environments
+                  </h4>
+                  <p style="margin-bottom: 0.75rem">
+                    We evaluate AMPED on the Unsupervised Reinforcement Learning
+                    Benchmark (URLB), which spans diverse tasks involving
+                    locomotion and manipulation. These experiments demonstrate
+                    that AMPED learns diverse and reusable skills in
+                    high-dimensional control settings.
+                  </p>
+
+                  <!-- Locomotion -->
+                  <h5 class="subtitle is-6" style="margin-bottom: 1rem">
+                    <b>Locomotion Tasks</b>
+                  </h5>
+                  <div class="columns is-multiline is-mobile is-centered">
+                    <div class="column is-one-third has-text-centered">
+                      <img
+                        src="static/images/walker_locomotion.gif"
+                        style="max-height: 300px"
+                      />
+                      <p class="is-size-6">Stepping forward</p>
+                    </div>
+                    <div class="column is-one-third has-text-centered">
+                      <img
+                        src="static/images/walker_acrobatic.gif"
+                        style="max-height: 300px"
+                      />
+                      <p class="is-size-6">Backward somersault</p>
+                    </div>
+                    <div class="column is-one-third has-text-centered">
+                      <img
+                        src="static/images/walker_recovery.gif"
+                        style="max-height: 300px"
+                      />
+                      <p class="is-size-6">Getting up from ground</p>
+                    </div>
+                    <div class="column is-one-third has-text-centered">
+                      <img
+                        src="static/images/quadruped_flip.gif"
+                        style="max-height: 300px"
+                      />
+                      <p class="is-size-6">Backward somersault</p>
+                    </div>
+                    <div class="column is-one-third has-text-centered">
+                      <img
+                        src="static/images/quadruped_rotation.gif"
+                        style="max-height: 300px"
+                      />
+                      <p class="is-size-6">Clockwise rotation</p>
+                    </div>
+                    <div class="column is-one-third has-text-centered">
+                      <img
+                        src="static/images/quadruped_recovery.gif"
+                        style="max-height: 300px"
+                      />
+                      <p class="is-size-6">Upside-down recovery</p>
+                    </div>
+                  </div>
+
+                  <!-- Manipulation -->
+                  <h5 class="subtitle is-6" style="margin-bottom: 1rem">
+                    <b>Manipulation Tasks</b>
+                  </h5>
+                  <div class="columns is-multiline is-mobile is-centered">
+                    <div class="column is-one-third has-text-centered">
+                      <img
+                        src="static/images/jaco_left_reach.gif"
+                        style="max-height: 300px"
+                      />
+                      <p class="is-size-6">Left reach & grasp</p>
+                    </div>
+                    <div class="column is-one-third has-text-centered">
+                      <img
+                        src="static/images/jaco_right_reach.gif"
+                        style="max-height: 300px"
+                      />
+                      <p class="is-size-6">Right reach & grasp</p>
+                    </div>
+                    <div class="column is-one-third has-text-centered">
+                      <img
+                        src="static/images/jaco_lifting.gif"
+                        style="max-height: 300px"
+                      />
+                      <p class="is-size-6">Upward lifting</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Maze Subsection -->
+              <h4 class="title is-5">2. Maze Environments</h4>
+              <p style="margin-bottom: 0.75rem">
+                We evaluate AMPED in Tree Maze and 2D Maze environments to
+                assess the spatial coverage and discriminability of the learned
+                skills through visual analysis.
+              </p>
+
+              <b>Tree Maze</b>
+              <div class="columns is-multiline is-mobile is-centered">
+                <div class="column is-one-fifth has-text-centered">
+                  <img
+                    src="static/images/diayn_6skills.jpg"
+                    alt="DIAYN 6 Skills"
+                    style="max-width: 100%"
+                  />
+                  <figcaption>DIAYN</figcaption>
+                </div>
+                <div class="column is-one-fifth has-text-centered">
+                  <img
+                    src="static/images/becl_6skills.jpg"
+                    alt="BeCL 6 Skills"
+                    style="max-width: 100%"
+                  />
+                  <figcaption>BeCL</figcaption>
+                </div>
+                <div class="column is-one-fifth has-text-centered">
+                  <img
+                    src="static/images/cic_6skills.jpg"
+                    alt="CIC 6 Skills"
+                    style="max-width: 100%"
+                  />
+                  <figcaption>CIC</figcaption>
+                </div>
+                <div class="column is-one-fifth has-text-centered">
+                  <img
+                    src="static/images/comsd_6skills.jpg"
+                    alt="ComSD 6 Skills"
+                    style="max-width: 100%"
+                  />
+                  <figcaption>ComSD</figcaption>
+                </div>
+                <div class="column is-one-fifth has-text-centered">
+                  <img
+                    src="static/images/ours_6skills.jpg"
+                    alt="AMPED 6 Skills"
+                    style="max-width: 100%"
+                  />
+                  <figcaption>AMPED</figcaption>
+                </div>
+              </div>
+
+              <b>2D Maze</b>
+              <div class="columns is-multiline is-mobile is-centered">
+                <div class="column is-one-fifth has-text-centered">
+                  <img
+                    src="static/images/diayn_15skills.jpg"
+                    alt="DIAYN 15 Skills"
+                    style="max-width: 100%"
+                  />
+                  <figcaption>DIAYN</figcaption>
+                </div>
+                <div class="column is-one-fifth has-text-centered">
+                  <img
+                    src="static/images/becl_15skills.jpg"
+                    alt="BeCL 15 Skills"
+                    style="max-width: 100%"
+                  />
+                  <figcaption>BeCL</figcaption>
+                </div>
+                <div class="column is-one-fifth has-text-centered">
+                  <img
+                    src="static/images/cic_15skills.jpg"
+                    alt="CIC 15 Skills"
+                    style="max-width: 100%"
+                  />
+                  <figcaption>CIC</figcaption>
+                </div>
+                <div class="column is-one-fifth has-text-centered">
+                  <img
+                    src="static/images/comsd_15skills.jpg"
+                    alt="ComSD 15 Skills"
+                    style="max-width: 100%"
+                  />
+                  <figcaption>ComSD</figcaption>
+                </div>
+                <div class="column is-one-fifth has-text-centered">
+                  <img
+                    src="static/images/ours_15skills.jpg"
+                    alt="AMPED 15 Skills"
+                    style="max-width: 100%"
+                  />
+                  <figcaption>AMPED</figcaption>
+                </div>
+              </div>
+
+              <h4 class="title is-5" style="margin-top: 1rem">
+                3. Quantitative Evaluation on URLB
+              </h4>
+
+              <details class="collapsible" style="margin-bottom: 1rem">
+                <summary style="cursor: pointer; font-weight: 600">
+                  🔍 Click to view the full table
+                </summary>
+                <figure style="text-align: center; margin-top: 1rem">
+                  <img
+                    src="static/images/performance_table.png"
+                    alt="Performance Table"
+                    style="max-width: 100%; height: auto"
+                  />
+                </figure>
+              </details>
+
+              <p style="margin-bottom: 1.5rem">
+                We evaluate AMPED and prior methods on the Unsupervised
+                Reinforcement Learning Benchmark (URLB) using four key metrics:
+                <b>Median</b>, <b>Interquartile Mean (IQM)</b>, <b>Mean</b>, and
+                <b>Optimality Gap</b>, all measured via expert-normalized
+                scores.
+              </p>
+
+              <figure style="text-align: center">
+                <img
+                  src="static/images/aggregated_performance.png"
+                  alt="URLB Metrics Comparison"
+                  style="max-width: 100%; height: auto"
+                />
+              </figure>
+
+              <p>
+                Notably, AMPED ranks first in <b>all four metrics</b>,
+                highlighting both its consistency and effectiveness across a
+                wide range of tasks. It significantly outperforms prior methods
+                like BeCL, CeSD, ComSD, and DIAYN, particularly in terms of IQM
+                and optimality gap.
+              </p>
+
+              <h4 class="title is-5" style="margin-top: 1rem">
+                4. How important is each component of AMPED?
+              </h4>
+
+              <details class="collapsible" style="margin-bottom: 1rem">
+                <summary style="cursor: pointer; font-weight: 600">
+                  🔍 Click to view Component Ablation Table
+                </summary>
+                <figure style="text-align: center; margin-top: 1rem">
+                  <img
+                    src="static/images/component_ablation.png"
+                    alt="Component Ablation Table"
+                    style="max-width: 100%; height: auto"
+                  />
+                </figure>
+              </details>
+
+              <p>
+                We conduct ablation experiments by systematically removing each
+                core component of AMPED:
+                <b>RND-based exploration</b>, <b>AnInfoNCE-based diversity</b>,
+                <b>gradient surgery</b>, and the <b>skill selector</b>. The
+                performance is evaluated across three domains (Walker,
+                Quadruped, Jaco) with four tasks each.
+              </p>
+
+              <p>
+                Removing <b>RND</b> or <b>gradient surgery</b> leads to the most
+                significant performance degradation, particularly in
+                locomotion-heavy environments like Walker and Quadruped.
+                AnInfoNCE and skill selector also contribute meaningfully, but
+                to a lesser degree. This highlights the importance of each
+                component in achieving AMPED's superior performance.
+              </p>
+
+              <h4 class="title is-5" style="margin-top: 1rem">
+                5. How fast is AMPED?
+              </h4>
+
+              <details class="collapsible" style="margin-bottom: 1rem">
+                <summary style="cursor: pointer; font-weight: 600">
+                  🔍 Click to view Pretraining Time Table
+                </summary>
+                <figure style="text-align: center; margin-top: 1rem">
+                  <img
+                    src="static/images/pretraining_time.png"
+                    alt="AMPED Pretraining Time Comparison"
+                    style="max-width: 100%; height: auto"
+                  />
+                </figure>
+              </details>
+
+              <div class="content has-text-justified">
+                <p>
+                  We compare the wall-clock training time of <b>AMPED</b> with
+                  various baselines across the Walker, Quadruped, and Jaco
+                  domains. Despite achieving superior downstream performance,
+                  AMPED introduces only a modest runtime overhead compared to
+                  competitive methods such as CeSD and BeCL. Overall, these
+                  results indicate that
+                  <b>AMPED achieves a favorable trade-off</b> between
+                  computational cost and empirical performance.
+                </p>
+              </div>
+
+              <h4 class="title is-5" style="margin-top: 1rem">
+                6. What is the effect of the gradient projection ratio?
+              </h4>
+              <p style="margin-bottom: 1.5rem">
+                We conduct an ablation study to investigate the effect of the
+                <b>gradient projection ratio</b>—that is, the probability of
+                projecting diversity gradients onto the exploration gradient
+                direction when their dot product is negative.
+              </p>
+
+              <!-- Ablation Figures -->
+              <div
+                class="columns is-multiline is-centered"
+                style="margin-top: 1.5rem"
+              >
+                <div class="column is-one-third has-text-centered">
+                  <figure>
+                    <img
+                      src="static/images/ablation_projection_ratio_walker.png"
+                      alt="Walker Ablation"
+                      style="max-width: 100%; height: auto"
+                    />
+                    <figcaption class="is-size-6">Walker</figcaption>
+                  </figure>
+                </div>
+
+                <div class="column is-one-third has-text-centered">
+                  <figure>
+                    <img
+                      src="static/images/ablation_projection_ratio_quadruped.png"
+                      alt="Quadruped Ablation"
+                      style="max-width: 100%; height: auto"
+                    />
+                    <figcaption class="is-size-6">Quadruped</figcaption>
+                  </figure>
+                </div>
+
+                <div class="column is-one-third has-text-centered">
+                  <figure>
+                    <img
+                      src="static/images/ablation_projection_ratio_jaco.png"
+                      alt="Jaco Ablation"
+                      style="max-width: 100%; height: auto"
+                    />
+                    <figcaption class="is-size-6">Jaco</figcaption>
+                  </figure>
+                </div>
+
+                <div
+                  class="column is-full has-text-centered"
+                  style="margin-top: -1rem"
+                >
+                  <img
+                    src="static/images/legend_projection_ratio.png"
+                    alt="Legend"
+                    style="max-width: 360px"
+                  />
+                </div>
+
+                <p style="margin-top: -1rem">
+                  We find that a moderate projection ratio offers the best
+                  trade-off between diversity and exploration. A ratio that is
+                  too low disables effective gradient alignment, leading to
+                  degraded performance, while a ratio that is too high may
+                  overly constrain exploration and limit skill diversity.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <footer class="footer">
         <div class="container">
