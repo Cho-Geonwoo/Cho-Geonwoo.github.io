@@ -196,10 +196,92 @@
                 "
               >
                 <tbody>
-                  <tr onmouseout="amped_stop()" onmouseover="amped_start()">
+                  <tr>
                     <td
                       style="padding: 20px; width: 25%; vertical-align: middle"
                     >
+                      <div class="one">
+                        <img src="assets/img/papers/cp_drl.svg" width="160" />
+                      </div>
+                    </td>
+                    <td style="padding: 20px; width: 75%; vertical-align: top">
+                      <a>
+                        <papertitle
+                          >Causal-paced Deep Reinforcement Learning
+                        </papertitle>
+                      </a>
+                      <br />
+                      <strong>Geonwoo Cho</strong>,
+                      <a href="https://jaegyunn.github.io/">Jaegyun Im</a>,
+                      <a href="https://cosmos1030.github.io/">Doyoon Kim</a>,
+                      <a href="https://sundong.kim/">Sundong Kim</a>
+                      <br />
+                      <em>Preprint</em>
+                      <br />
+                      <!-- <a href="https://github.com/Cho-Geonwoo/TRACED">Code</a> -->
+                      <p>
+                        We propose CP-DRL, a causally-aware curriculum that
+                        infers SCM differences from interaction data and
+                        sequences tasks according to the resulting causal
+                        structural variations across environments.
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr onmouseout="traced_stop()" onmouseover="traced_start()">
+                    <td style="padding: 20px; width: 25%; vertical-align: top">
+                      <div class="one">
+                        <img src="assets/img/papers/bw_stair.gif" width="160" />
+                      </div>
+                      <script type="text/javascript">
+                        function traced_start() {
+                          document.getElementById(
+                            "traced_image"
+                          ).style.opacity = "1";
+                        }
+
+                        function traced_stop() {
+                          document.getElementById(
+                            "traced_image"
+                          ).style.opacity = "0";
+                        }
+                        traced_stop();
+                      </script>
+                    </td>
+                    <td style="padding: 20px; width: 75%; vertical-align: top">
+                      <a href="https://traced.vercel.app/">
+                        <papertitle
+                          >TRACED: Transition-aware Regret Approximation with
+                          Co-learnability for Environment Design
+                        </papertitle>
+                      </a>
+                      <br />
+                      <strong>Geonwoo Cho</strong>,
+                      <a href="https://jaegyunn.github.io/">Jaegyun Im</a>,
+                      <a
+                        href="https://scholar.google.com/citations?hl=en&user=6CeMbuMAAAAJ"
+                        >Jihwan Lee</a
+                      >, Hojun Yi,
+                      <a href="https://sejinkimm.github.io/">Sejin Kim</a>,
+                      <a href="https://sundong.kim/">Sundong Kim</a>
+                      <br />
+                      <em>Preprint</em>
+                      <br />
+                      <!-- <a href="https://arxiv.org/abs/2506.05980">Paper</a> / -->
+                      <a href="https://traced.vercel.app/">Website</a>
+                      <!-- <a href="https://github.com/Cho-Geonwoo/TRACED">Code</a> -->
+                      <p>
+                        We propose TRACED, a regret-based curriculum that
+                        augments value loss with transition-prediction loss and
+                        a lightweight co-learnability metric.
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr onmouseout="amped_stop()" onmouseover="amped_start()">
+                    <td style="padding: 20px; width: 25%; vertical-align: top">
                       <div class="one">
                         <img
                           src="assets/img/papers/quadruped_rotation.gif"
@@ -219,9 +301,7 @@
                         amped_stop();
                       </script>
                     </td>
-                    <td
-                      style="padding: 20px; width: 75%; vertical-align: middle"
-                    >
+                    <td style="padding: 20px; width: 75%; vertical-align: top">
                       <a href="https://geonwoo.me/amped/">
                         <papertitle
                           >AMPED: Adaptive Multi-objective Projection for
@@ -265,61 +345,6 @@
                     </td>
                   </tr>
                 </tbody>
-
-                <!-- <tbody>
-                  <tr onmouseout="traced_stop()" onmouseover="traced_start()">
-                    <td
-                      style="padding: 20px; width: 25%; vertical-align: middle"
-                    >
-                      <div class="one">
-                        <img src="assets/img/papers/bw_stair.gif" width="160" />
-                      </div>
-                      <script type="text/javascript">
-                        function traced_start() {
-                          document.getElementById(
-                            "traced_image"
-                          ).style.opacity = "1";
-                        }
-
-                        function traced_stop() {
-                          document.getElementById(
-                            "traced_image"
-                          ).style.opacity = "0";
-                        }
-                        traced_stop();
-                      </script>
-                    </td>
-                    <td
-                      style="padding: 20px; width: 75%; vertical-align: middle"
-                    >
-                      <a href="https://geonwoo.me/traced/">
-                        <papertitle
-                          >TRACED: Transition-aware Regret Approximation with
-                          Co-learnability for Environment Design
-                        </papertitle>
-                      </a>
-                      <br />
-                      <strong>Geonwoo Cho</strong>,
-                      <a href="https://jaegyunn.github.io/">Jaegyun Im</a>,
-                      <a
-                        href="https://scholar.google.com/citations?hl=en&user=6CeMbuMAAAAJ"
-                        >Jihwan Lee</a
-                      >, Hojun Yi,
-                      <a href="https://sejinkimm.github.io/">Sejin Kim</a>,
-                      <a href="https://sundong.kim/">Sundong Kim</a>
-                      <br />
-                      <em>Preprint</em>
-                      <br />
-                      <a href="https://geonwoo.me/traced/">Website</a> /
-                      <a href="https://github.com/Cho-Geonwoo/TRACED">Code</a>
-                      <p>
-                        We propose TRACED, a regret‐based curriculum that
-                        augments value loss with transition‐prediction loss and
-                        a lightweight co‐learnability metric.
-                      </p>
-                    </td>
-                  </tr>
-                </tbody> -->
               </table>
             </div>
             <hr class="soft" />
