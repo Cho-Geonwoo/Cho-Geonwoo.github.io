@@ -1,4 +1,4 @@
-# Continuous Control with Coarse-to-fine Reinforcement Learning
+# AMPED: Adaptive Multi-objective Projection for balancing Exploration and skill Diversification
 
 # Website License
 Templated borrowed from <a href="https://github.com/nerfies/nerfies.github.io">NeRFies</a>  
