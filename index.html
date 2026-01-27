@@ -95,6 +95,61 @@
           /* Adjust this value as needed */
         }
       }
+      /* --- Publications layout fix --- */
+      /* --- Publications layout (2-column stable) --- */
+      .pub-table {
+        width: 100%;
+        border: 0;
+        border-spacing: 0;
+        border-collapse: separate;
+        margin: 0 auto;
+        table-layout: fixed; /* 핵심 */
+      }
+
+      .pub-table td {
+        vertical-align: top;
+      }
+
+      .pub-img-cell {
+        width: 220px; /* 퍼센트 대신 픽셀 고정이 800px 컨테이너에서 더 안정적 */
+        padding: 20px;
+      }
+
+      .pub-text-cell {
+        padding: 20px;
+      }
+
+      .pub-text-only {
+        padding: 20px;
+      }
+
+      .pub-img {
+        display: block;
+        width: 100%;
+        max-width: 220px; /* 1번 스샷처럼 큼직하게 */
+        height: auto;
+        object-fit: cover;
+      }
+
+      @media (max-width: 768px) {
+        /* 모바일은 스택 */
+        .pub-table,
+        .pub-table tbody,
+        .pub-table tr,
+        .pub-table td {
+          display: block;
+          width: 100% !important;
+        }
+        .pub-img {
+          max-width: 320px;
+          margin: 0 0 10px 0;
+        }
+        .pub-img-cell,
+        .pub-text-cell,
+        .pub-text-only {
+          padding: 12px 0;
+        }
+      }
     </style>
   </head>
 
@@ -194,27 +249,21 @@
               <heading>Publications</heading>
             </button>
             <div id="publications" class="collapse in">
-              <table
-                style="
-                  width: 100%;
-                  border: 0px;
-                  border-spacing: 0px;
-                  border-collapse: separate;
-                  margin-right: auto;
-                  margin-left: auto;
-                "
-              >
+              <table class="pub-table">
                 <tbody>
+                  <!-- TRACED (image + text) -->
                   <tr>
-                    <!-- <td style="padding: 20px; width: 25%; vertical-align: top">
-                    <div class="one">
-                      <img src="assets/img/papers/bw_stair.gif" width="160" />
-                    </div>
-                  </td> -->
-                    <td style="padding: 20px; width: 100%; vertical-align: top">
+                    <td class="pub-img-cell">
+                      <img
+                        src="assets/img/papers/bw_stair.gif"
+                        class="pub-img"
+                        alt="TRACED teaser"
+                      />
+                    </td>
+                    <td class="pub-text-cell">
                       <a href="https://arxiv.org/abs/2506.19997">
-                        <papertitle
-                          >TRACED: Transition-aware Regret Approximation with
+                        <papertitle>
+                          TRACED: Transition-aware Regret Approximation with
                           Co-learnability for Environment Design
                         </papertitle>
                       </a>
@@ -228,13 +277,11 @@
                       <a href="https://sejinkimm.github.io/">Sejin Kim</a>,
                       <a href="https://sundong.kim/">Sundong Kim</a>
                       <br />
-                      <em>ICLR, 2026</em>
-                      <br />
+                      <em>ICLR, 2026</em><br />
                       <em
                         >CoRL Workshop on Resource-Rational Robot Learning,
                         2025</em
-                      >
-                      <br />
+                      ><br />
                       <a href="https://arxiv.org/abs/2506.19997">Paper</a> /
                       <a href="https://geonwoo.me/traced/">Website</a> /
                       <a href="https://github.com/Cho-Geonwoo/TRACED">Code</a>
@@ -245,21 +292,20 @@
                       </p>
                     </td>
                   </tr>
-                </tbody>
-                <tbody>
+
+                  <!-- AMPED (image + text) -->
                   <tr>
-                    <!-- <td style="padding: 20px; width: 25%; vertical-align: top">
-                    <div class="one">
+                    <td class="pub-img-cell">
                       <img
                         src="assets/img/papers/quadruped_rotation.gif"
-                        width="160"
+                        class="pub-img"
+                        alt="AMPED teaser"
                       />
-                    </div>
-                  </td> -->
-                    <td style="padding: 20px; width: 100%; vertical-align: top">
+                    </td>
+                    <td class="pub-text-cell">
                       <a href="https://geonwoo.me/amped/">
-                        <papertitle
-                          >AMPED: Adaptive Multi-objective Projection for
+                        <papertitle>
+                          AMPED: Adaptive Multi-objective Projection for
                           balancing Exploration and skill Diversification
                         </papertitle>
                       </a>
@@ -273,26 +319,11 @@
                       >,
                       <a href="https://sundong.kim/">Sundong Kim</a>
                       <br />
-                      <em>ICLR, 2026</em>
-                      <br />
+                      <em>ICLR, 2026</em><br />
                       <em
                         >CoRL Workshop on Resource-Rational Robot Learning,
                         2025</em
-                      >
-                      <br />
-                      <!-- <span class="link-block">
-                      <a
-                        target="_blank"
-                        href="https://geonwoo.me/amped/static/paper/AMPED.pdf"
-                        class="external-link button is-normal is-rounded is-dark"
-                      >
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                      /
-                    </span> -->
+                      ><br />
                       <a href="https://arxiv.org/abs/2506.05980">Paper</a> /
                       <a href="https://geonwoo.me/amped/">Website</a> /
                       <a href="https://github.com/Cho-Geonwoo/amped">Code</a>
@@ -304,14 +335,14 @@
                       </p>
                     </td>
                   </tr>
-                </tbody>
-                <tbody>
+
+                  <!-- SOAR (text-only, keep full width) -->
                   <tr>
-                    <td style="padding: 20px; width: 100%; vertical-align: top">
+                    <td class="pub-text-only" colspan="2">
                       <a href="./assets/paper/SOAR.pdf">
                         <papertitle
-                          >Annealing Bridges Offline and Online RL
-                        </papertitle>
+                          >Annealing Bridges Offline and Online RL</papertitle
+                        >
                       </a>
                       <br />
                       <strong>Geonwoo Cho</strong>,
@@ -329,15 +360,12 @@
                           href="./assets/paper/SOAR.pdf"
                           class="external-link button is-normal is-rounded is-dark"
                         >
-                          <span class="icon">
-                            <i class="fas fa-file-pdf"></i>
-                          </span>
+                          <span class="icon"
+                            ><i class="fas fa-file-pdf"></i
+                          ></span>
                           <span>Paper</span>
                         </a>
                       </span>
-                      <!-- <a href="https://arxiv.org/abs/2506.05980">Paper</a> /
-                      <a href="https://geonwoo.me/amped/">Website</a> /
-                      <a href="https://github.com/Cho-Geonwoo/amped">Code</a> -->
                       <p>
                         SOAR is an offline-to-online RL framework that jointly
                         stabilizes early adaptation and preserves long-run
@@ -347,21 +375,14 @@
                       </p>
                     </td>
                   </tr>
-                </tbody>
-                <tbody>
+
+                  <!-- CP-DRL (text-only, keep full width) -->
                   <tr>
-                    <!-- <td
-                      style="padding: 20px; width: 25%; vertical-align: middle"
-                    >
-                      <div class="one">
-                        <img src="assets/img/papers/SCM.png" width="160" />
-                      </div>
-                    </td> -->
-                    <td style="padding: 20px; width: 100%; vertical-align: top">
+                    <td class="pub-text-only" colspan="2">
                       <a href="https://arxiv.org/abs/2507.02910">
                         <papertitle
-                          >Causal-Paced Deep Reinforcement Learning
-                        </papertitle>
+                          >Causal-Paced Deep Reinforcement Learning</papertitle
+                        >
                       </a>
                       <br />
                       <strong>Geonwoo Cho</strong>,
@@ -387,6 +408,7 @@
                 </tbody>
               </table>
             </div>
+
             <hr class="soft" />
 
             <button
