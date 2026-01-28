@@ -130,6 +130,20 @@
         height: auto;
         object-fit: cover;
       }
+
+      @media (max-width: 768px) {
+        /* mobile에서는 img invisible */
+        .pub-table td {
+          display: block;
+          width: 100%;
+          max-width: 100%;
+          padding-left: 30px;
+          padding-bottom: 0px;
+        }
+        .pub-img {
+          display: none;
+        }
+      }
     </style>
   </head>
 
