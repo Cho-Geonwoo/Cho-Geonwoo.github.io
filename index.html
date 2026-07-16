@@ -103,44 +103,74 @@
         border-spacing: 0;
         border-collapse: separate;
         margin: 0 auto;
-        table-layout: fixed; /* 핵심 */
+        table-layout: fixed;
+      }
+
+      .pub-image-col {
+        width: 230px;
+      }
+
+      .pub-details-col {
+        width: auto;
       }
 
       .pub-table td {
         vertical-align: top;
-        padding-left: 30px;
       }
 
       .pub-img-cell {
-        width: 220px; /* 퍼센트 대신 픽셀 고정이 800px 컨테이너에서 더 안정적 */
-        padding: 20px;
+        width: 230px;
+        padding: 20px 20px 20px 30px;
       }
 
       .pub-text-cell {
-        padding: 20px;
+        padding: 20px 20px 20px 10px;
       }
 
       .pub-text-only {
-        padding: 20px;
+        padding: 20px 20px 20px 30px;
       }
 
       .pub-img {
         display: block;
-        width: 100%;
-        max-width: 220px; /* 1번 스샷처럼 큼직하게 */
+        width: auto;
+        max-width: 180px;
+        max-height: 180px;
         height: auto;
-        object-fit: cover;
+        object-fit: contain;
       }
 
       @media (max-width: 768px) {
-        /* mobile에서는 img invisible */
+        .pub-table,
+        .pub-table tbody,
+        .pub-table tr {
+          display: block;
+          width: 100%;
+          table-layout: auto;
+        }
+
+        .pub-table colgroup {
+          display: none;
+        }
+
         .pub-table td {
           display: block;
           width: 100%;
           max-width: 100%;
-          padding-left: 30px;
-          padding-bottom: 0px;
+          box-sizing: border-box;
+          padding: 16px 20px 0 30px;
         }
+
+        .pub-img-cell {
+          display: none;
+        }
+
+        .pub-text-cell,
+        .pub-text-only {
+          width: 100%;
+          max-width: 100%;
+        }
+
         .pub-img {
           display: none;
         }
@@ -266,153 +296,11 @@
             </button>
             <div id="publications" class="collapse in">
               <table class="pub-table">
-                <tbody>
-                  <!-- TRACED (image + text) -->
-
-                  <!-- AMPED (image + text) -->
-                  <tr>
-                    <td class="pub-img-cell">
-                      <img
-                        src="assets/img/papers/quadruped_rotation.gif"
-                        class="pub-img"
-                        alt="AMPED teaser"
-                      />
-                    </td>
-                    <td class="pub-text-cell">
-                      <a href="https://geonwoo.me/amped/">
-                        <papertitle>
-                          AMPED: Adaptive Multi-objective Projection for
-                          balancing Exploration and skill Diversification
-                        </papertitle>
-                      </a>
-                      <br />
-                      <strong>Geonwoo Cho*</strong>, Jaemoon Lee*,
-                      <a href="https://jaegyunn.github.io/">Jaegyun Im</a>,
-                      <a href="https://lee-subi.github.io/">Subi Lee</a>,
-                      <a
-                        href="https://scholar.google.com/citations?hl=en&user=6CeMbuMAAAAJ"
-                        >Jihwan Lee</a
-                      >,
-                      <a href="https://sundong.kim/">Sundong Kim</a>
-                      <br />
-                      <em>ICLR, 2026</em><br />
-                      <em
-                        >CoRL Workshop on Resource-Rational Robot Learning,
-                        2025</em
-                      ><br />
-                      <a href="https://arxiv.org/abs/2506.05980">Paper</a> /
-                      <a href="https://geonwoo.me/amped/">Project Page</a> /
-                      <a href="https://github.com/Cho-Geonwoo/amped">Code</a>
-                      <p>
-                        AMPED is a framework for skill-based reinforcement
-                        learning that simultaneously maximizes state coverage
-                        and skill diversity through several carefully designed
-                        components.
-                      </p>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td class="pub-img-cell">
-                      <img
-                        src="assets/img/papers/bw_stair.gif"
-                        class="pub-img"
-                        alt="TRACED teaser"
-                      />
-                    </td>
-                    <td class="pub-text-cell">
-                      <a href="https://arxiv.org/abs/2506.19997">
-                        <papertitle>
-                          TRACED: Transition-aware Regret Approximation with
-                          Co-learnability for Environment Design
-                        </papertitle>
-                      </a>
-                      <br />
-                      <strong>Geonwoo Cho</strong>,
-                      <a href="https://jaegyunn.github.io/">Jaegyun Im</a>,
-                      <a
-                        href="https://scholar.google.com/citations?hl=en&user=6CeMbuMAAAAJ"
-                        >Jihwan Lee</a
-                      >, Hojun Yi,
-                      <a href="https://sejinkimm.github.io/">Sejin Kim</a>,
-                      <a href="https://sundong.kim/">Sundong Kim</a>
-                      <br />
-                      <em>ICLR, 2026</em><br />
-                      <em
-                        >CoRL Workshop on Resource-Rational Robot Learning,
-                        2025</em
-                      ><br />
-                      <a href="https://arxiv.org/abs/2506.19997">Paper</a> /
-                      <a href="https://geonwoo.me/traced/">Project Page</a> /
-                      <a href="https://github.com/Cho-Geonwoo/TRACED">Code</a>
-                      <p>
-                        TRACED is an unsupervised environment design (UED)
-                        framework that constructs adaptive curricula by
-                        prioritizing tasks based on both how challenging they
-                        are and how much they transfer knowledge to other tasks.
-                      </p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="pub-text-only" colspan="2">
-                      <a>
-                        <papertitle
-                          >ANCHOR: KL-Anchored Adaptation for Stable
-                          Offline-to-Online RL</papertitle
-                        >
-                      </a>
-                      <br />
-                      <strong>Geonwoo Cho</strong>,
-                      <a href="https://jaegyunn.github.io/">Jaegyun Im</a>,
-                      <a href="https://cosmos1030.github.io/">Doyoon Kim</a>,
-                      <a href="https://lexinli.biostat.berkeley.edu/"
-                        >Lexin Li</a
-                      >
-                      <br />
-                      <em>Preprint</em>
-                      <br />
-                      <a>Paper</a> /
-                      <a>Code</a>
-                      <p>
-                        ANCHOR is an offline-to-online reinforcement learning
-                        method that stabilizes online fine-tuning by initially
-                        anchoring the policy to the offline-pretrained actor,
-                        then gradually relaxing this constraint to balance early
-                        safety and final performance.
-                      </p>
-                    </td>
-                  </tr>
-
-                  <!-- CP-DRL (text-only, keep full width) -->
-                  <tr>
-                    <td class="pub-text-only" colspan="2">
-                      <a href="https://arxiv.org/abs/2507.02910">
-                        <papertitle
-                          >Causal-Paced Deep Reinforcement Learning</papertitle
-                        >
-                      </a>
-                      <br />
-                      <strong>Geonwoo Cho</strong>,
-                      <a href="https://jaegyunn.github.io/">Jaegyun Im</a>,
-                      <a href="https://cosmos1030.github.io/">Doyoon Kim</a>,
-                      <a href="https://sundong.kim/">Sundong Kim</a>
-                      <br />
-                      <em
-                        >RLC Workshop on The Causal Reinforcement Learning, 2025
-                        (Oral)</em
-                      >
-                      <br />
-                      <a href="https://arxiv.org/abs/2507.02910">Paper</a> /
-                      <a href="https://github.com/Cho-Geonwoo/CP-DRL">Code</a>
-                      <p>
-                        CP-DRL is a causally-aware curriculum that infers SCM
-                        differences from interaction data and sequences tasks
-                        according to the resulting causal structural variations
-                        across environments.
-                      </p>
-                    </td>
-                  </tr>
-                </tbody>
+                <colgroup>
+                  <col class="pub-image-col" />
+                  <col class="pub-details-col" />
+                </colgroup>
+                <tbody id="publications-list"></tbody>
               </table>
             </div>
 
@@ -790,5 +678,247 @@
         </tr>
       </tbody>
     </table>
+    <script>
+      // Add future publications by appending one object to this list.
+      const publications = [
+        {
+          title:
+            "ANCHOR: KL-Anchored Adaptation for Stable Offline-to-Online RL",
+          authors: [
+            { name: "Geonwoo Cho", strong: true },
+            { name: "Jaegyun Im", url: "https://jaegyunn.github.io/" },
+            { name: "Doyoon Kim", url: "https://cosmos1030.github.io/" },
+            {
+              name: "Lexin Li",
+              url: "https://lexinli.biostat.berkeley.edu/",
+            },
+          ],
+          venues: ["Preprint"],
+          links: [{ label: "Paper", url: "assets/paper/ANCHOR.pdf" }],
+          description:
+            "ANCHOR is an offline-to-online reinforcement learning method that stabilizes online fine-tuning by initially anchoring the policy to the offline-pretrained actor, then gradually relaxing this constraint to balance early safety and final performance.",
+        },
+        {
+          title:
+            "Receding-Horizon Execution for Action Chunking in Offline-to-Online Reinforcement Learning",
+          authors: [
+            {
+              name: "Jihwan Lee",
+              url: "https://scholar.google.com/citations?user=6CeMbuMAAAAJ",
+            },
+            { name: "Geonwoo Cho", strong: true },
+            { name: "Hojun Yi", url: "https://172635.github.io/" },
+            { name: "Jaegyun Im", url: "https://jaegyunn.github.io/" },
+            {
+              name: "Giseung Park",
+              url: "https://sites.google.com/view/giseung-park",
+            },
+            { name: "Sundong Kim", url: "https://sundong.kim/" },
+          ],
+          venues: [
+            "ICML Workshop on Decision-Making from Offline Datasets to Online Adaptation: Black-Box Optimization to Reinforcement Learning, 2026",
+          ],
+        },
+        {
+          title:
+            "AMPED: Adaptive Multi-objective Projection for balancing Exploration and skill Diversification",
+          url: "https://geonwoo.me/amped/",
+          image: {
+            src: "assets/img/papers/quadruped_rotation.gif",
+            alt: "AMPED teaser",
+          },
+          authors: [
+            { name: "Geonwoo Cho*", strong: true },
+            { name: "Jaemoon Lee*" },
+            { name: "Jaegyun Im", url: "https://jaegyunn.github.io/" },
+            { name: "Subi Lee", url: "https://lee-subi.github.io/" },
+            {
+              name: "Jihwan Lee",
+              url: "https://scholar.google.com/citations?hl=en&user=6CeMbuMAAAAJ",
+            },
+            { name: "Sundong Kim", url: "https://sundong.kim/" },
+          ],
+          venues: [
+            "ICLR, 2026",
+            "CoRL Workshop on Resource-Rational Robot Learning, 2025",
+          ],
+          links: [
+            { label: "Paper", url: "https://arxiv.org/abs/2506.05980" },
+            { label: "Project Page", url: "https://geonwoo.me/amped/" },
+            { label: "Code", url: "https://github.com/Cho-Geonwoo/amped" },
+          ],
+          description:
+            "AMPED is a framework for skill-based reinforcement learning that simultaneously maximizes state coverage and skill diversity through several carefully designed components.",
+        },
+        {
+          title:
+            "TRACED: Transition-aware Regret Approximation with Co-learnability for Environment Design",
+          url: "https://arxiv.org/abs/2506.19997",
+          image: {
+            src: "assets/img/papers/bw_stair.gif",
+            alt: "TRACED teaser",
+          },
+          authors: [
+            { name: "Geonwoo Cho", strong: true },
+            { name: "Jaegyun Im", url: "https://jaegyunn.github.io/" },
+            {
+              name: "Jihwan Lee",
+              url: "https://scholar.google.com/citations?hl=en&user=6CeMbuMAAAAJ",
+            },
+            { name: "Hojun Yi", url: "https://172635.github.io/" },
+            { name: "Sejin Kim", url: "https://sejinkimm.github.io/" },
+            { name: "Sundong Kim", url: "https://sundong.kim/" },
+          ],
+          venues: [
+            "ICLR, 2026",
+            "CoRL Workshop on Resource-Rational Robot Learning, 2025",
+          ],
+          links: [
+            { label: "Paper", url: "https://arxiv.org/abs/2506.19997" },
+            { label: "Project Page", url: "https://geonwoo.me/traced/" },
+            { label: "Code", url: "https://github.com/Cho-Geonwoo/TRACED" },
+          ],
+          description:
+            "TRACED is an unsupervised environment design (UED) framework that constructs adaptive curricula by prioritizing tasks based on both how challenging they are and how much they transfer knowledge to other tasks.",
+        },
+        {
+          title: "Causal-Paced Deep Reinforcement Learning",
+          url: "https://arxiv.org/abs/2507.02910",
+          authors: [
+            { name: "Geonwoo Cho", strong: true },
+            { name: "Jaegyun Im", url: "https://jaegyunn.github.io/" },
+            { name: "Doyoon Kim", url: "https://cosmos1030.github.io/" },
+            { name: "Sundong Kim", url: "https://sundong.kim/" },
+          ],
+          venues: [
+            "RLC Workshop on The Causal Reinforcement Learning, 2025 (Oral)",
+          ],
+          links: [
+            { label: "Paper", url: "https://arxiv.org/abs/2507.02910" },
+            { label: "Code", url: "https://github.com/Cho-Geonwoo/CP-DRL" },
+          ],
+          description:
+            "CP-DRL is a causally-aware curriculum that infers SCM differences from interaction data and sequences tasks according to the resulting causal structural variations across environments.",
+        },
+      ];
+
+      const publicationsList = document.getElementById("publications-list");
+
+      function appendText(parent, text) {
+        parent.appendChild(document.createTextNode(text));
+      }
+
+      function appendLinkOrText(parent, item) {
+        let node;
+
+        if (item.url) {
+          node = document.createElement("a");
+          node.href = item.url;
+          node.textContent = item.name || item.label;
+        } else {
+          node = document.createElement("span");
+          node.textContent = item.name || item.label;
+        }
+
+        if (item.em) {
+          const em = document.createElement("em");
+          em.appendChild(node);
+          node = em;
+        }
+
+        if (item.strong) {
+          const strong = document.createElement("strong");
+          strong.appendChild(node);
+          node = strong;
+        }
+
+        parent.appendChild(node);
+      }
+
+      function appendSeparatedItems(parent, items) {
+        items.forEach((item, index) => {
+          if (index > 0) appendText(parent, ", ");
+          appendLinkOrText(parent, item);
+        });
+      }
+
+      function appendPublicationTitle(parent, publication) {
+        const wrapper = document.createElement("a");
+        if (publication.url) wrapper.href = publication.url;
+
+        const title = document.createElement("papertitle");
+        title.textContent = publication.title;
+        wrapper.appendChild(title);
+        parent.appendChild(wrapper);
+      }
+
+      function appendVenues(parent, venues) {
+        venues.forEach((venue) => {
+          const em = document.createElement("em");
+          em.textContent = venue;
+          parent.appendChild(em);
+          parent.appendChild(document.createElement("br"));
+        });
+      }
+
+      function appendLinks(parent, links) {
+        links.forEach((link, index) => {
+          if (index > 0) appendText(parent, " / ");
+
+          const a = document.createElement("a");
+          if (link.url) a.href = link.url;
+          a.textContent = link.label;
+          parent.appendChild(a);
+        });
+      }
+
+      function createPublicationTextCell(publication) {
+        const td = document.createElement("td");
+        td.className = publication.image ? "pub-text-cell" : "pub-text-only";
+        if (!publication.image) td.colSpan = 2;
+
+        appendPublicationTitle(td, publication);
+        td.appendChild(document.createElement("br"));
+        appendSeparatedItems(td, publication.authors || []);
+        td.appendChild(document.createElement("br"));
+        appendVenues(td, publication.venues || []);
+
+        if (publication.links && publication.links.length > 0) {
+          appendLinks(td, publication.links);
+        }
+
+        if (publication.description) {
+          const description = document.createElement("p");
+          description.textContent = publication.description;
+          td.appendChild(description);
+        }
+
+        return td;
+      }
+
+      function createPublicationImageCell(image) {
+        const td = document.createElement("td");
+        td.className = "pub-img-cell";
+
+        const img = document.createElement("img");
+        img.src = image.src;
+        img.className = "pub-img";
+        img.alt = image.alt;
+        td.appendChild(img);
+
+        return td;
+      }
+
+      publications.forEach((publication) => {
+        const row = document.createElement("tr");
+
+        if (publication.image) {
+          row.appendChild(createPublicationImageCell(publication.image));
+        }
+
+        row.appendChild(createPublicationTextCell(publication));
+        publicationsList.appendChild(row);
+      });
+    </script>
   </body>
 </html>
