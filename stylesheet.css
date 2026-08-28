@@ -173,8 +173,8 @@ body[data-page="home"] .site-title {
 
 .intro-section {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 210px;
-  gap: 80px;
+  grid-template-columns: minmax(0, 1fr) 235px;
+  gap: 70px;
   align-items: start;
 }
 
@@ -202,8 +202,8 @@ body[data-page="home"] .site-title {
 }
 
 .profile-photo {
-  width: 205px;
-  height: 205px;
+  width: 230px;
+  height: 230px;
   border: 3px solid var(--soft-bg);
   border-radius: 50%;
   object-fit: cover;
@@ -247,9 +247,9 @@ body[data-page="home"] .site-title {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 7px;
-  margin-top: 16px;
-  font-size: 1.2rem;
+  gap: 9px;
+  margin-top: 18px;
+  font-size: 1.45rem;
   line-height: 1;
 }
 
