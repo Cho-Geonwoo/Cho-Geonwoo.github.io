@@ -612,24 +612,35 @@ body[data-page="home"] .site-title {
 @media (max-width: 720px) {
   .site-shell {
     width: min(100% - 28px, var(--max-width));
-    padding-top: 22px;
+    padding-top: 0;
   }
 
   .site-header {
     display: block;
-    margin-bottom: 34px;
+    min-height: 54px;
+    margin-bottom: 28px;
+  }
+
+  .site-title {
+    display: none;
   }
 
   .site-nav {
-    justify-content: flex-start;
-    margin-top: 8px;
-    gap: 14px;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 0;
+    padding: 17px 0 13px;
+  }
+
+  .site-nav a {
+    font-size: 0.9rem;
   }
 
   .intro-section {
     display: flex;
     flex-direction: column-reverse;
-    gap: 24px;
+    gap: 20px;
+    align-items: stretch;
   }
 
   .profile-photo-wrap {
@@ -638,17 +649,44 @@ body[data-page="home"] .site-title {
   }
 
   .profile-photo {
-    width: 150px;
-    height: 150px;
+    width: 220px;
+    height: 220px;
+  }
+
+  .social-links {
+    gap: 11px;
+    margin-top: 18px;
+    font-size: 1.65rem;
   }
 
   .intro-copy h1,
   .page-heading h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   .content-section {
-    margin-top: 42px;
+    margin-top: 0;
+  }
+
+  .section-title,
+  .year-heading {
+    font-size: 1.7rem;
+  }
+
+  .filter-input {
+    margin: 1.1rem 0 1.8rem;
+  }
+
+  .publication-list {
+    gap: 2.2rem;
+  }
+
+  .publication-year {
+    gap: 1.35rem;
+  }
+
+  .publication-item {
+    padding-bottom: 1.3rem;
   }
 
   .news-item {
@@ -672,13 +710,11 @@ body[data-page="home"] .site-title {
 
   .cv-layout {
     display: block;
-    margin-top: 32px;
+    margin-top: 0;
   }
 
   .cv-sidebar {
-    position: static;
-    margin-bottom: 28px;
-    padding-top: 0;
+    display: none;
   }
 
   .cv-sidebar nav {
@@ -716,7 +752,7 @@ body[data-page="home"] .site-title {
   }
 
   .personal-sections {
-    margin-top: 2.2rem;
+    margin-top: 1.8rem;
   }
 
   .personal-section {
