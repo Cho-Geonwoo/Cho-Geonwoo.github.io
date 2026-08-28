@@ -37,7 +37,7 @@ window.siteData = {
       'I am a Ph.D. student in Computer Science and Engineering at the University of Michigan, Ann Arbor, where I work with Prof. <a href="https://silviupitis.com/">Silviu Pitis</a>.',
       "My long-term ambition is to help solve nuclear fusion. My current research centers on building <strong>foundational models for decision-making</strong>.",
       "I am particularly interested in how learning systems make consequential decisions across <strong>time, goals, and scale</strong>. Concretely, I study practical credit assignment methods for reinforcement learning, the mathematical foundations of goal-conditioned reinforcement learning that extend reliably to multiple goals, and how reinforcement learning shapes the behavior of large models.",
-      "Previously, I worked as a machine learning software engineer at Match Group/Hyperconnect LLC and several other companies, where I gained hands-on experience deploying large-scale machine learning systems in production.",
+      "Previously, I worked in MLOps at several companies, gaining hands-on experience deploying large-scale machine learning systems in production.",
     ],
   },
 
