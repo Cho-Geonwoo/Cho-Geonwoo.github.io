@@ -517,6 +517,86 @@ body[data-page="home"] .site-title {
   margin: 0.25rem 0 0;
 }
 
+.personal-sections {
+  margin-top: 2.5rem;
+}
+
+.personal-section {
+  padding: 2.2rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.personal-section h2 {
+  margin: 0 0 0.85rem;
+  font-size: 1.15rem;
+  line-height: 1.4;
+}
+
+.personal-copy p:last-child {
+  margin-bottom: 0;
+}
+
+.personal-copy a {
+  background-image: linear-gradient(currentcolor, currentcolor);
+  background-position: left calc(100% - 1px);
+  background-repeat: no-repeat;
+  background-size: 0 1px;
+  transition:
+    color 160ms ease,
+    background-size 180ms ease;
+}
+
+.personal-copy a:hover,
+.personal-copy a:focus {
+  background-size: 100% 1px;
+}
+
+.personal-gallery {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 3fr);
+  gap: 10px;
+  align-items: start;
+  margin-top: 1.5rem;
+}
+
+.personal-gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.personal-gallery-single {
+  display: block;
+}
+
+.personal-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1.2rem;
+}
+
+.personal-actions a {
+  display: inline-flex;
+  gap: 0.45rem;
+  align-items: center;
+  padding: 0.38rem 0.7rem;
+  border: 1px solid var(--moss);
+  border-radius: 2px;
+  background-image: none;
+  color: var(--text);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.personal-actions a:hover,
+.personal-actions a:focus {
+  border-color: var(--link);
+  background: var(--link);
+  color: #ffffff;
+}
+
 @media (prefers-reduced-motion: reduce) {
   a,
   .profile-photo,
@@ -633,5 +713,17 @@ body[data-page="home"] .site-title {
   .cv-basics-card .cv-item span {
     display: inline;
     margin-top: 0;
+  }
+
+  .personal-sections {
+    margin-top: 2.2rem;
+  }
+
+  .personal-section {
+    padding: 1.8rem 0;
+  }
+
+  .personal-gallery {
+    grid-template-columns: 1fr 1fr;
   }
 }

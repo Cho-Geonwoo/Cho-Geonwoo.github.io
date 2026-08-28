@@ -422,12 +422,64 @@
   }
 
   function renderPersonalPage() {
-    const section = createElement("section", { className: "content-section page-heading" });
-    section.appendChild(createElement("h1", { text: data.personal.title }));
-    data.personal.body.forEach((paragraph) => {
-      section.appendChild(createElement("p", { text: paragraph }));
+    const pageSection = createElement("section", {
+      className: "content-section page-heading personal-page",
     });
-    app.appendChild(section);
+    const sections = createElement("div", { className: "personal-sections" });
+
+    pageSection.appendChild(createElement("h1", { text: data.personal.title }));
+
+    data.personal.sections.forEach((personalSection) => {
+      const section = createElement("section", { className: "personal-section" });
+      const content = createElement("div", { className: "personal-copy" });
+
+      section.appendChild(createElement("h2", { text: personalSection.title }));
+      personalSection.body.forEach((paragraph) => {
+        content.appendChild(createElement("p", { html: paragraph }));
+      });
+
+      if (personalSection.images) {
+        const gallery = createElement("div", { className: "personal-gallery" });
+
+        if (personalSection.images.length === 1) {
+          gallery.classList.add("personal-gallery-single");
+        }
+
+        personalSection.images.forEach((imageData) => {
+          const image = createElement("img", imageData);
+          image.loading = "lazy";
+          image.decoding = "async";
+          gallery.appendChild(image);
+        });
+
+        content.appendChild(gallery);
+      }
+
+      if (personalSection.links) {
+        const links = createElement("div", { className: "personal-actions" });
+
+        personalSection.links.forEach((link) => {
+          const anchor = createElement("a", {
+            href: link.url,
+            target: link.newTab ? "_blank" : undefined,
+            rel: link.newTab ? "noreferrer" : undefined,
+          });
+          const icon = createElement("i", { className: link.icon });
+          icon.setAttribute("aria-hidden", "true");
+          anchor.appendChild(icon);
+          anchor.appendChild(document.createTextNode(link.label));
+          links.appendChild(anchor);
+        });
+
+        content.appendChild(links);
+      }
+
+      section.appendChild(content);
+      sections.appendChild(section);
+    });
+
+    pageSection.appendChild(sections);
+    app.appendChild(pageSection);
   }
 
   function initScrollProgress() {

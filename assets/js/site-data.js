@@ -313,8 +313,50 @@ window.siteData = {
 
   personal: {
     title: "Personal",
-    body: [
-      "I will add more personal notes, interests, and photos here soon.",
+    sections: [
+      {
+        title: "Climbing & Outdoors",
+        body: [
+          "Climbing is the activity I enjoy most. I also like running, golf, basketball, and outdoor activities in general.",
+        ],
+        images: [
+          {
+            src: "assets/img/personal/climbing-wall.png",
+            alt: "Geonwoo climbing on an indoor bouldering wall",
+          },
+          {
+            src: "assets/img/personal/bouldering.png",
+            alt: "Geonwoo reaching for a hold while bouldering",
+          },
+        ],
+      },
+      {
+        title: "Books & Literature",
+        body: [
+          "I love reading, especially novels, and I have a particular fondness for the works of Charles Dickens.",
+          'I have also written a Korean-language critical essay, <em>과학의 언어로 설계한 인문학: 이상의 「선에 관한 각서」와 패러다임 전환</em>, on Yi Sang\'s <a href="https://library.ltikorea.or.kr/translatedbooks/29423?currentLanguageCd=CO-LAN-ENG">Memorandum on the Line</a>. I think readers interested in the philosophy of science will find it especially enjoyable.',
+        ],
+        links: [
+          {
+            label: "Read the essay (PDF)",
+            url: "assets/paper/memorandum-on-the-line.pdf",
+            icon: "fa-regular fa-file-pdf",
+            newTab: true,
+          },
+        ],
+      },
+      {
+        title: "Chess & Games",
+        body: [
+          "I am an enthusiastic chess player. I also reached Grandmaster in Overwatch.",
+        ],
+        images: [
+          {
+            src: "assets/img/personal/overwatch-grandmaster.jpeg",
+            alt: "Overwatch profile showing a Grandmaster rank",
+          },
+        ],
+      },
     ],
   },
 };
