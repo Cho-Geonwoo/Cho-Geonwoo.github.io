@@ -528,6 +528,38 @@
     });
   }
 
+  function initThemeToggle() {
+    const nav = document.querySelector(".site-nav");
+    const button = createElement("button", {
+      className: "theme-toggle",
+      type: "button",
+    });
+
+    button.innerHTML = `
+      <svg class="theme-icon theme-icon-moon" aria-hidden="true" viewBox="0 0 24 24">
+        <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>
+      </svg>
+      <svg class="theme-icon theme-icon-sun" aria-hidden="true" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="4"></circle>
+        <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+      </svg>
+    `;
+    nav.appendChild(button);
+
+    const updateButton = () => {
+      const isDark = window.siteTheme.get() === "dark";
+      const label = isDark ? "Switch to light mode" : "Switch to dark mode";
+      button.setAttribute("aria-label", label);
+      button.title = label;
+    };
+
+    button.addEventListener("click", () => {
+      window.siteTheme.toggle();
+    });
+    window.addEventListener("themechange", updateButton);
+    updateButton();
+  }
+
   const renderers = {
     home: renderHome,
     publications: renderPublicationsPage,
@@ -537,6 +569,7 @@
 
   renderSiteTitle();
   activateNavigation();
+  initThemeToggle();
   renderers[page]();
   initScrollProgress();
 })();
