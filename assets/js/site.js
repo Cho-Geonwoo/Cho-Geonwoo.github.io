@@ -445,6 +445,10 @@
           gallery.classList.add("personal-gallery-single");
         }
 
+        if (personalSection.images[0].crop) {
+          gallery.classList.add(`personal-gallery-${personalSection.images[0].crop}`);
+        }
+
         personalSection.images.forEach((imageData) => {
           const image = createElement("img", imageData);
           image.loading = "lazy";

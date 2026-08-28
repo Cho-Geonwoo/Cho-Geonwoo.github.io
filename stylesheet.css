@@ -570,6 +570,17 @@ body[data-page="home"] .site-title {
   display: block;
 }
 
+.personal-gallery-bottom-chat {
+  aspect-ratio: 2.55 / 1;
+  overflow: hidden;
+}
+
+.personal-gallery-bottom-chat img {
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
 .personal-actions {
   display: flex;
   flex-wrap: wrap;

@@ -35,8 +35,8 @@ window.siteData = {
     ],
     bio: [
       'I am a Ph.D. student in Computer Science and Engineering at the University of Michigan, Ann Arbor, where I work with Prof. <a href="https://silviupitis.com/">Silviu Pitis</a>.',
-      "My research interests center on developing <strong>foundational models for decision-making</strong> and understanding their theoretical underpinnings.",
-      "Specifically, my current research interests include (1) <strong>Scalable Reinforcement Learning</strong>, to build agents that scale with data and compute across large task families, and (2) <strong>Reinforcement Learning for Large Models</strong>, to develop theoretical and empirical understanding of how RL principles shape and enhance the behavior of large models.",
+      "My long-term ambition is to help solve nuclear fusion. My current research centers on building <strong>foundational models for decision-making</strong>.",
+      "I am particularly interested in how learning systems make consequential decisions across <strong>time, goals, and scale</strong>. Concretely, I study practical credit assignment methods for reinforcement learning, the mathematical foundations of goal-conditioned reinforcement learning that extend reliably to multiple goals, and how reinforcement learning shapes the behavior of large models.",
       "Previously, I worked as a machine learning software engineer at Match Group/Hyperconnect LLC and several other companies, where I gained hands-on experience deploying large-scale machine learning systems in production.",
     ],
   },
@@ -354,6 +354,7 @@ window.siteData = {
           {
             src: "assets/img/personal/overwatch-grandmaster.jpeg",
             alt: "Overwatch profile showing a Grandmaster rank",
+            crop: "bottom-chat",
           },
         ],
       },
