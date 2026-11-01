@@ -72,8 +72,11 @@ window.siteData = {
         { name: "Doyoon Kim", url: "https://cosmos1030.github.io/" },
         { name: "Lexin Li", url: "https://lexinli.biostat.berkeley.edu/" },
       ],
-      venues: ["Preprint"],
-      links: [{ label: "Paper", url: "assets/paper/ANCHOR.pdf" }],
+      venues: ["CoRL Workshop on Continually Self-Improving Robots, 2026"],
+      links: [
+        { label: "Paper", url: "assets/paper/ANCHOR.pdf" },
+        { label: "Code", url: "https://github.com/Cho-Geonwoo/ANCHOR" },
+      ],
       description:
         "ANCHOR is an offline-to-online reinforcement learning method that stabilizes online fine-tuning by initially anchoring the policy to the offline-pretrained actor, then gradually relaxing this constraint to balance early safety and final performance.",
     },
@@ -300,6 +303,10 @@ window.siteData = {
         entries: [
           {
             title: "ICLR 2027",
+            details: ["Reviewer"],
+          },
+          {
+            title: "CoRL 2026 Workshop on Continually Self-Improving Robots",
             details: ["Reviewer"],
           },
           {
