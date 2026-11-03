@@ -45,23 +45,23 @@ window.siteData = {
   news: [
     {
       date: "Nov 2026",
-      text: 'Our paper <a href="https://arxiv.org/abs/2611.02177">ANCHOR: KL-Anchored Adaptation for Stable Offline-to-Online RL</a> is now available on arXiv and was accepted at the CoRL Workshop on Continually Self-Improving Robots.',
+      text: 'Our paper <a href="https://arxiv.org/abs/2611.02177">ANCHOR: KL-Anchored Adaptation for Stable Offline-to-Online RL</a> has been accepted to the CoRL Workshop on Continually Self-Improving Robots.',
     },
     {
       date: "Aug 2026",
-      text: 'I joined the University of Michigan as a Ph.D. student in Computer Science and Engineering.',
+      text: 'I have joined the University of Michigan as a Ph.D. student in Computer Science and Engineering.',
     },
     {
       date: "Jul 2026",
-      text: 'Our paper <a href="https://openreview.net/forum?id=vyWu5mz4x0">Receding-Horizon Execution for Action Chunking in Offline-to-Online Reinforcement Learning</a> appeared at the ICML Workshop on Decision-Making from Offline Datasets to Online Adaptation.',
+      text: 'Our paper <a href="https://openreview.net/forum?id=vyWu5mz4x0">Receding-Horizon Execution for Action Chunking in Offline-to-Online Reinforcement Learning</a> has been accepted to the ICML Workshop on Decision-Making from Offline Datasets to Online Adaptation.',
     },
     {
       date: "Jan 2026",
-      text: 'Our papers <a href="https://arxiv.org/abs/2506.05980">AMPED</a> and <a href="https://arxiv.org/abs/2506.19997">TRACED</a> were accepted to ICLR 2026 after appearing at the CoRL Workshop on Resource-Rational Robot Learning in 2025.',
+      text: 'Our papers <a href="https://arxiv.org/abs/2506.05980">AMPED</a> and <a href="https://arxiv.org/abs/2506.19997">TRACED</a> have been accepted to ICLR 2026. Both papers were previously presented at the CoRL Workshop on Resource-Rational Robot Learning in 2025.',
     },
     {
       date: "Aug 2025",
-      text: 'Our paper <a href="https://arxiv.org/abs/2507.02910">Causal-Paced Deep Reinforcement Learning</a> was presented as an oral at the RLC Workshop on The Causal Reinforcement Learning.',
+      text: 'Our paper <a href="https://arxiv.org/abs/2507.02910">Causal-Paced Deep Reinforcement Learning</a> has been selected for an oral presentation at the RLC Workshop on Causal Reinforcement Learning.',
     },
   ],
 
