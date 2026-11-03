@@ -65,7 +65,7 @@ window.siteData = {
     {
       year: "2026",
       title: "ANCHOR: KL-Anchored Adaptation for Stable Offline-to-Online RL",
-      url: "assets/paper/ANCHOR.pdf",
+      url: "https://arxiv.org/abs/2611.02177",
       authors: [
         { name: "Geonwoo Cho", self: true },
         { name: "Jaegyun Im", url: "https://jaegyunn.github.io/" },
@@ -74,7 +74,7 @@ window.siteData = {
       ],
       venues: ["CoRL Workshop on Continually Self-Improving Robots, 2026"],
       links: [
-        { label: "Paper", url: "assets/paper/ANCHOR.pdf" },
+        { label: "Paper", url: "https://arxiv.org/abs/2611.02177" },
         { label: "Code", url: "https://github.com/Cho-Geonwoo/ANCHOR" },
       ],
       description:
