@@ -44,6 +44,10 @@ window.siteData = {
   newsLimit: 8,
   news: [
     {
+      date: "Nov 2026",
+      text: 'Our paper <a href="https://arxiv.org/abs/2611.02177">ANCHOR: KL-Anchored Adaptation for Stable Offline-to-Online RL</a> is now available on arXiv and was accepted at the CoRL Workshop on Continually Self-Improving Robots.',
+    },
+    {
       date: "Aug 2026",
       text: 'I joined the University of Michigan as a Ph.D. student in Computer Science and Engineering.',
     },
