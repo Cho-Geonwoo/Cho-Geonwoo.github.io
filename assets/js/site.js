@@ -278,7 +278,15 @@
 
     wrapper.appendChild(renderSectionHeading(section.title));
 
-    section.entries.forEach((entry) => {
+    if (section.body) {
+      const body = createElement("div", { className: "cv-section-body" });
+      section.body.forEach((paragraph) => {
+        body.appendChild(createElement("p", { html: paragraph }));
+      });
+      wrapper.appendChild(body);
+    }
+
+    (section.entries || []).forEach((entry) => {
       const item = createElement("article", { className: "cv-item" });
       const heading = createElement("div", { className: "cv-item-heading" });
       heading.appendChild(createElement("h3", { text: entry.title }));
@@ -294,7 +302,7 @@
       list.appendChild(item);
     });
 
-    wrapper.appendChild(list);
+    if (section.entries) wrapper.appendChild(list);
     return wrapper;
   }
 

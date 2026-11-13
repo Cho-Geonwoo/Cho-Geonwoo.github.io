@@ -525,6 +525,10 @@ body[data-page="home"] .site-title {
   gap: 0;
 }
 
+.cv-section-body p:last-child {
+  margin-bottom: 0;
+}
+
 .cv-item {
   padding: 1.15rem 0;
   border-bottom: 1px solid var(--line);

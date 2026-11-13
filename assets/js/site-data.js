@@ -194,12 +194,21 @@ window.siteData = {
         ],
       },
       {
+        title: "Research Summary",
+        body: [
+          "I study how reinforcement learning agents discover reusable skills and make decisions across long horizons. My current work asks when contrastive learning yields representations that generalize across goals, how exploration can uncover skills that unlock later behaviors, and how to assign credit for delayed outcomes. My previous work developed methods for unsupervised skill discovery, curriculum design, and stable adaptation from offline data to online interaction.",
+        ],
+      },
+      {
         title: "Education",
         entries: [
           {
             title: "University of Michigan, Ann Arbor",
             meta: "Aug 2026 - Present",
-            details: ["Ph.D. in Computer Science and Engineering"],
+            details: [
+              "Ph.D. Student in Computer Science and Engineering",
+              'Advisor: Prof. <a href="https://silviupitis.com/">Silviu Pitis</a>',
+            ],
           },
           {
             title: "Gwangju Institute of Science and Technology",
@@ -208,16 +217,47 @@ window.siteData = {
               "B.S. in Electrical Engineering and Computer Science",
               "Cum Laude",
               "Minor in Mathematics",
+              "Leave of absence for mandatory military service, Mar 2022 - Feb 2024",
             ],
           },
           {
             title: "University of California, Berkeley",
             meta: "Jan 2025 - Aug 2025",
-            details: ["Exchange Student"],
+            details: ["Exchange Student, funded by GIST"],
           },
           {
             title: "Korea Science Academy of KAIST",
             meta: "Mar 2016 - Feb 2019",
+            details: ["High School Diploma"],
+          },
+        ],
+      },
+      {
+        title: "Korean Conferences",
+        entries: [
+          {
+            title: "Evaluating Simplicial Normalization in Multi-Task Reinforcement Learning",
+            meta: "2024",
+            details: [
+              "Geonwoo Cho*, Subi Lee*, Jaemoon Lee",
+              "Korea Software Congress (Poster)",
+            ],
+          },
+          {
+            title: "Development of a Deep Learning-Based House-Tree-Person Test Analysis Model",
+            meta: "2021",
+            details: [
+              "Seung-Je Cho, Geonwoo Cho, Young-wook Kim",
+              "Korea Information Processing Society Fall Conference (Poster)",
+            ],
+          },
+          {
+            title: "LSTM-Based Earthquake Anomaly Detection Applied to Total Electron Current Data",
+            meta: "2020",
+            details: [
+              "Geonwoo Cho, Dong Keon Park, Hong Kook Kim",
+              "Korea Artificial Intelligence Conference (Poster)",
+            ],
           },
         ],
       },
@@ -227,22 +267,30 @@ window.siteData = {
           {
             title: "University of Michigan, Ann Arbor",
             meta: "Aug 2026 - Present",
-            details: ['Reinforcement Learning, advised by Prof. <a href="https://silviupitis.com/">Silviu Pitis</a>'],
+            details: [
+              'Doctoral research, advised by Prof. <a href="https://silviupitis.com/">Silviu Pitis</a>',
+              "Goal-conditioned reinforcement learning, contrastive representations, exploration, and credit assignment",
+            ],
           },
           {
             title: "UCLA, Statistics and Data Science",
             meta: "June 2025 - Aug 2026",
-            details: ['Continuous-time Reinforcement Learning, advised by Prof. <a href="https://www.yuhuazhu.org/">Yuhua Zhu</a>'],
+            details: ['Continuous-time offline reinforcement learning, advised by Prof. <a href="https://www.yuhuazhu.org/">Yuhua Zhu</a>'],
           },
           {
             title: "Berkeley, Biostatistics",
             meta: "Jan 2025 - Aug 2026",
-            details: ['Offline-to-Online Reinforcement Learning, advised by Prof. <a href="https://lexinli.biostat.berkeley.edu/">Lexin Li</a>'],
+            details: ['Offline-to-online reinforcement learning, advised by Prof. <a href="https://lexinli.biostat.berkeley.edu/">Lexin Li</a>'],
           },
           {
             title: "GIST, Data Science Lab",
             meta: "Apr 2024 - Aug 2026",
-            details: ['Unsupervised Environment Design and Skill-based Reinforcement Learning, advised by Prof. <a href="https://sundong.kim/">Sundong Kim</a>'],
+            details: ['Unsupervised skill discovery and curriculum design, advised by Prof. <a href="https://sundong.kim/">Sundong Kim</a>'],
+          },
+          {
+            title: "GIST, AITER Lab",
+            meta: "Jun 2020 - Dec 2020",
+            details: ["Time-series models for earthquake anomaly detection, advised by Prof. Hong Kook Kim"],
           },
         ],
       },
@@ -255,12 +303,9 @@ window.siteData = {
             details: ["Machine Learning Software Engineer"],
           },
           {
-            title: "Match Group/Hyperconnect LLC",
+            title: "Hyperconnect (Match Group)",
             meta: "Jun 2022 - Jul 2023",
-            details: [
-              "Machine Learning Software Engineer",
-              "Worked as part of the mandatory military service in the Republic of Korea",
-            ],
+            details: ["Machine Learning Software Engineer"],
           },
           {
             title: "Business Canvas",
@@ -280,12 +325,12 @@ window.siteData = {
           {
             title: "Causal-Paced Deep Reinforcement Learning",
             meta: "Aug 2025",
-            details: ["Reinforcement Learning Conference Workshop"],
+            details: ["Contributed Oral, RLC Workshop on Causal Reinforcement Learning"],
           },
           {
             title: "Feature Store Implementation for Real-Time Recommender Systems",
             meta: "Sep 2024",
-            details: ["Dev Night (GIST)"],
+            details: ["Dev Night, GIST"],
           },
         ],
       },
@@ -300,11 +345,63 @@ window.siteData = {
               "Outstanding Thesis Award",
             ],
           },
+          {
+            title: "Academic Excellence Scholarship, GIST",
+            meta: "Fall 2024",
+          },
+          {
+            title: "Dream AI Open Challenge, Fourth Prize",
+            meta: "Dec 2020",
+            details: ["Korea Ministry of Science and ICT"],
+          },
+          {
+            title: "International Collegiate Programming Contest (ICPC)",
+            meta: "Jun 2020",
+            details: ["Seoul Regional Qualifier"],
+          },
+          {
+            title: "GIST President's Award, First Prize",
+            meta: "Dec 2019",
+            details: ["Creative Convergence Competition"],
+          },
         ],
       },
       {
-        title: "Service",
+        title: "Patent Applications",
         entries: [
+          {
+            title: "Method and System for Gradient Surgery-Based Multi-Objective Reinforcement Learning",
+            meta: "Dec 2025",
+            details: ["KR 10-2025-0200580"],
+          },
+          {
+            title: "Method and System for Task Prioritization Reinforcement Learning Based on Structural Differences",
+            meta: "Dec 2025",
+            details: ["KR 10-2025-0196565"],
+          },
+          {
+            title: "Methods and Systems for Learning Based on Difficulty and Mutual Learning",
+            meta: "Oct 2025",
+            details: ["KR 10-2025-0160737"],
+          },
+        ],
+      },
+      {
+        title: "Teaching & Professional Service",
+        entries: [
+          {
+            title: "Industry Mentor, F-Lab",
+            meta: "Feb 2024 - Jan 2025",
+            details: ["Software Engineering and DevOps"],
+          },
+          {
+            title: "Teaching Assistant, GIST",
+            meta: "Feb 2024 - Dec 2024",
+            details: [
+              "Single Variable Calculus and Applications",
+              "Machine Learning and Deep Learning",
+            ],
+          },
           {
             title: "ICLR 2027",
             details: ["Reviewer"],
